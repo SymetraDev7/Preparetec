@@ -9,8 +9,22 @@ body {
 }
 
 #upper-header {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
     height: 400px;
     background-color: #45B26F;
+}
+#chats{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+#left-chat{
+    display: flex;
+    flex-wrap: wrap;
+    width: 372px;
+    height: 100%;
 }
 #upper-header article{
     margin: 0; padding: 0;
@@ -24,11 +38,29 @@ body {
     margin: 0px 50px;
 }
 
+.baloes-left-chat, .baloes-right-chat{
+    display: flex;
+    flex-direction: column;
+}
+.baloes-left-chat{
+    width: 372px;
+}
+.balao-left img, .balao-right img{
+    min-height: 70px;
+}
+.user-chat{
+    min-height: 50px;
+    width: 100%;
+}.user-chat img{
+    display: flex;
+    text-align: left;
+    width: 50px;
+}
 header {
     height: 60px;
     width: 100%;
     box-shadow: 5px 1px 15px #888888;
-    background-color: #98FFA8;
+    background-color: #F3F3F3;
     border-radius: 0px 0px 20px 20px;
     position: sticky;
     top: 0;
@@ -56,8 +88,8 @@ li {
     text-decoration: dashed;
 }
 .btn-p:hover{
-    border: 1px solid black;
     color: black;
+    transition: 0.3s;
 }
 
 nav ul li a {
@@ -70,24 +102,6 @@ nav ul li a {
 }
 article{
     margin: 15px;
-}
-.baloes-left-chat, .baloes-right-chat{
-    display: flex;
-    flex-direction: column;
-}
-.baloes-left-chat{
-    width: 372px;
-}
-.balao-left img, .balao-right img{
-    min-height: 70px;
-}
-.user-chat{
-    min-height: 50px;
-    width: 100%;
-    text-align: left;
-}
-.user-chat img{
-    margin-left: -50px;
 }
 h1{
     color: #3C8F5D;
