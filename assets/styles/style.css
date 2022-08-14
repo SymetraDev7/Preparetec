@@ -71,6 +71,24 @@ nav ul li a {
 article{
     margin: 15px;
 }
+.baloes-left-chat, .baloes-right-chat{
+    display: flex;
+    flex-direction: column;
+}
+.baloes-left-chat{
+    width: 372px;
+}
+.balao-left img, .balao-right img{
+    min-height: 70px;
+}
+.user-chat{
+    min-height: 50px;
+    width: 100%;
+    text-align: left;
+}
+.user-chat img{
+    margin-left: -50px;
+}
 h1{
     color: #3C8F5D;
 }
