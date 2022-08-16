@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #f4f4f4;
+  background-color: #002841;
   scroll-behavior: smooth;
 }
 
@@ -115,7 +115,7 @@ h2 {
 #nosso-projeto {
   background-color: #f4f4f4;
   min-height: 700px;
-  margin: 2%;
+  padding: 2%;
   font-size: 20px;
 }
 #nosso-projeto article h2{
