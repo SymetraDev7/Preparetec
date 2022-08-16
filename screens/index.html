@@ -15,8 +15,8 @@
 </head>
 
 <body>
-  <section id='upper-header'>
-    <article>
+  <!--<section id='upper-header'>
+    <article id='logos'>
       <img src="../assets/images/logoPreparetec.png" alt="" />
       <img src="../assets/images/logoDEM.png" alt="" />
     </article>
@@ -35,6 +35,9 @@
           <img src="../assets/images/balao4.png">
         </div>
       </div>
+      <div id='bonequinho-container'>
+        <div id="bonequinho"></div>
+      </div>
       <div id='right-chat'>
         <div class="baloes-right-chat">
           <img src="../assets/images/balao2.png">
@@ -43,7 +46,7 @@
       </div>
       </div>
     </article>
-  </section>
+  </section>-->
   <header>
     <nav>
       <ul>
@@ -56,18 +59,20 @@
     </nav>
   </header>
   <main>
-    <section>
-      <article>
-        <h1>Seja Bem Vindo</h1>
-        <div>
+    <section id='inicio'>
+      <article id='inicio-content'>
+        <h2>Seja Bem Vindo</h2>
+        <div class="inicio-text">
           Este É o Site Oficial do Projeto PREPARETEC, o cursinho preparatório
           para as escolas técnicas com ensino médio, uma iniciativa aprovada e
-          apoiada pela Prefeitura de Mongaguá e Pelo Departamento de Educação de
-          Mongaguá.
+          apoiada pela Prefeitura de Mongaguá e pelo Departamento de Educação de
+          Mongaguá. Nosso objetivo é atrair os alunos do Ensino Fundamental II, mais especificamente, alunos do 9º
+          (nono) ano do ensino fundamental e instigar neles o interesse de adentrar em uma escola técnica com ensino
+          médio, afim de recuperar o regresso dos alunos, consequência dos dois anos de pandemia e aulas em casa.
         </div>
       </article>
       <article class="links">
-        <aside>
+        <aside class="alunos">
           <h1>Para Alunos:</h1>
           <ul class="list-links">
             <li class=""><a href="">Acesse o Calendário</a></li>
@@ -75,7 +80,7 @@
             <li><a href="">Acessar Documentação</a></li>
           </ul>
         </aside>
-        <aside>
+        <aside class="professores">
           <h1>Para Professores:</h1>
           <ul class="list-links">
             <!-- CORRIGIR A MARGEM DOS TEXTOS -->
@@ -85,23 +90,15 @@
           </ul>
         </aside>
       </article>
-      <article>
-        <div class="agradecimentosContainer">
-          <label>Iniciativa Aprovada E Apoiada Por: </label>
-          <img src="/assets/images/logoDEM.png" alt="" />
-          <img src="/assets/images/logoPrefeituraMongagua.png" alt="" />
-          <img src="/assets/images/logoEscolaAdolphoBerezin.png" alt="" />
-        </div>
-      </article>
     </section>
     <section class="nosso">
       <article>
-        <h2>Nosso Projeto</h1>
-          <div class="line"></div>
+        <h2>Nosso Projeto</h2>
+        <div class="line"></div>
       </article>
       <article>
-        <aside class="flex-l">
-          <p>
+        <aside class='nosso-projeto-1'>
+          <div>
             Para realizar o sonho de estudar nas escolas técnicas, é necessário
             preparo com antecedência, por isso revisar e fixar as matérias das
             avaliações ao longo do ano, certamente poderá garantir um bom
@@ -112,10 +109,9 @@
             (Escola Técnica Estadual), onde o aluno poderá optar pelo ingresso
             no Ensino Médio, Integrado ou Técnico de acordo com edital de cada
             instituição.
-          </p>
-          <div class="imagesSection">
-            <img src="/assets/images/image1sectionAboutProject.png" alt="" />
-            <img src="/assets/images/image2sectionAboutProject.png" alt="" />
+          </div>
+          <div>
+            <img href="assets/images/noosso-projeto-imagem1.png">
           </div>
         </aside>
         <aside class="flex-r">
@@ -123,12 +119,12 @@
             <img src="/assets/images/image3sectionAboutProject.png" alt="" />
           </div>
           <div class="item">
-            <p>
+            <div>
               O curso é formado pelas disciplinas de Língua Portuguesa: Gramática,
               Int. de Textos, Matemática, História, Geografia, Química, Física e
               Biologia. Aulas de Inteligência Emocional, para que o aluno sinta-se
               seguro emocionalmente durante a avaliação.
-            </p>
+            </div>
           </div>
 
         </aside>
