@@ -257,3 +257,67 @@ h2 {
     flex-direction: column;
   }
 }
+
+.item{
+  width: 600px;
+}
+
+.titulo-green{
+  color: #98ffa8;
+  font-size: 40px;
+}
+.cont-professores{
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ flex-wrap: wrap;
+ margin-top: 30px;
+}
+.cont-professores img{
+  margin-left: 30%;
+}
+
+.prof-content{
+  justify-content: center;
+  align-items: center;
+}
+.item-left{
+  color: white;
+  margin: 30px;
+  width: 500px;
+}
+.btn-p-main{
+  padding: 10px;
+  margin-left: 30px;
+  background-color: red;
+  color:  white;
+  text-decoration: dashed;
+  border-radius: 20px 20px 0 20px;
+
+}
+/* Parte do quem somos */
+#quemsomos{
+  background-color: white;
+  margin-top: 30px;
+}
+
+.blue{
+  color: #002841;
+}
+.item p{
+  margin: 30px;
+}
+.image-logo{
+  margin: 30px;
+}
+/* mentores */
+.mentores{
+  margin: 30px;
+}
+/* nossa cara */
+.sobrenos{
+  display: flex;
+}
+.sobrenos img{
+  height: 300px;
+}
