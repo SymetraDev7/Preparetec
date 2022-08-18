@@ -4,6 +4,7 @@
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  transition: 0.3s;
 }
 
 body {
@@ -416,13 +417,22 @@ h1{
   margin: 0px 40px;
   background-position: center;
 }
-.card-content{
+.card-content p{
   display: none;
+}
+.foto-card:hover > .card-content p{
+  display: block;
+}
+.card-content{
+  visibility: hidden;
+  height: 0;
+  overflow-y: hidden;
 }
 .foto-card:hover{
   cursor: pointer;
 }
 .foto-card:hover > .card-content{
+  visibility: visible;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -430,7 +440,6 @@ h1{
   height: 40%;
   background-color: #f3f3f3;
   color: #000;
-  transition: 0.5s;
   padding: 10px;
   text-align: center;
 }
