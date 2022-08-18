@@ -4,7 +4,6 @@
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  transition: 0.3s;
 }
 
 body {
@@ -27,6 +26,7 @@ body {
   width: 395px;
   height: 55px;
   margin: 0px 20px;
+  margin-top: 1%;
 }
 .right-upper{
   display: flex;
@@ -39,12 +39,15 @@ body {
   background-size: cover;
   width: 135px;
   height: 55px;
+  margin-top: 4.3%;
 }
 .logo-prefeitura{
   background-image: url('../images/logoPrefeituraMongagua.png');
   background-size: cover;
   width: 60px;
   height: 55px;
+  margin-top: 4.3%;
+  margin-right: 25px;
 }
 
 header {
@@ -427,6 +430,7 @@ h1{
   visibility: hidden;
   height: 0;
   overflow-y: hidden;
+  transition: 0.5s;
 }
 .foto-card:hover{
   cursor: pointer;
@@ -480,6 +484,9 @@ h1{
 }
 .professor{
   background-image: url(../images/sem-foto-homem.jpg);
+}
+footer{
+
 }
 
 @media(max-width: 1100px) {
