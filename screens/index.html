@@ -24,12 +24,19 @@
     </article>
   </section>
   <header>
-    <nav>
-      <ul>
+    <nav id="nav">
+      <ul id="menu">
         <li><a href='#mapa'>Calendário</a></li>
         <li><a href="#nosso-projeto">Nosso Projeto</a></li>
         <li><a href='#professores'>Professores</a></li>
         <li><a href="#quem-somos">Quem Somos?</a></li>
+        <button id="btnMenu" style="display: none;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-list"
+            viewBox="0 0 16 16" id="hamburguer">
+            <path fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+          </svg>
+        </button>
         <li><a href="#participe" class="btn-p">Participe</a></li>
       </ul>
     </nav>
@@ -309,8 +316,11 @@
     </section>
     <footer>
       <article>
-        <aside><img src="../assets/images/logoPreparetec.png" /><img src="../assets/images/LogoDEM.png"><img
-            src='../assets/images/logoPrefeituraMongagua.png'></aside>
+        <aside class="logos-projeto">
+          <img src="../assets/images/logoPreparetec.png" />
+          <img src="../assets/images/LogoDEM.png" />
+          <img src='../assets/images/logoPrefeituraMongagua.png'>
+        </aside>
         <aside>
           <h2>Contato:</h2>
           <div class="linkGroups"></div>
@@ -341,8 +351,9 @@
       <img href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE08oiFkq09f2DVSntow_FXcF6XLKV_oZ6Xw&usqp=CAU">
     </footer>
   </main>
-  <script src="./assets/src/index.js"></script>
-  <script src="./style/style.js"></script>
+  <script src="/./assets/src/index.js"></script>
+  <script src="/./assets/styles/style.js"></script>
+
 </body>
 
 </html>

@@ -31,8 +31,9 @@ body {
 .right-upper{
   display: flex;
   min-width: 17%;
+ 
   justify-content: space-between;
-  margin: 0 30px;
+  margin:  0, 30px;
 }
 .logo-dem{
   background-image: url('../images/logoDEM.png');
@@ -373,13 +374,14 @@ h1{
 .quem-somos-content{
   display: flex;
   flex-direction: column;
+  margin: 50px 0px;
 }
 .qs{
-  width: 750px;
+  max-width: 750px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin: 0;
+  margin: 0px 30px;
 }
  .qs p{
   margin: 10px 0;
@@ -410,8 +412,10 @@ h1{
 .foto-card{
   display: flex;
   flex-direction: column;
-  height: 300px;
-  width: 200px;
+  min-height: 300px;
+  min-width: 200px;
+  max-height: 300px;
+  max-width: 200px;
   justify-content: flex-end;
   background-size: cover;
   transition: 0.5s;
@@ -431,6 +435,12 @@ h1{
   height: 0;
   overflow-y: hidden;
   transition: 0.5s;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+  color: #000;
+  text-align: center;
 }
 .foto-card:hover{
   cursor: pointer;
@@ -438,17 +448,8 @@ h1{
 .foto-card:hover > .card-content{
   visibility: visible;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 40%;
-  background-color: #f3f3f3;
-  color: #000;
+  height: 120px;
   padding: 10px;
-  text-align: center;
-}
-.foto-card:hover > .nome-card{
-  transition: 0.5s;
 }
 #priscila-eleuterio{
   background-image: url('../images/priscila.jpeg');
@@ -468,7 +469,7 @@ h1{
 #thomas{
   background-image: url('../images/thomas.jpg');
 }
-.nome-card{
+.nome-card p{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -478,7 +479,6 @@ h1{
   width: 100%;
   border-radius: 20px 20px 0 0;
 }
-
 .item p, .image-logo, .apoiadores, .sobrenos, .funcionarios {
   margin: 30px;
 }
@@ -486,7 +486,18 @@ h1{
   background-image: url(../images/sem-foto-homem.jpg);
 }
 footer{
-
+  background-color: #3C8F5D;
+  display: flex;
+  flex-direction: row;
+}
+.logos-projeto{
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.logos-projeto img{
+  height: 50px;
+  margin: 10px;
 }
 
 @media(max-width: 1100px) {
@@ -561,4 +572,58 @@ footer{
   main{
     margin-top: 90px;
   }
+  .quem-somos-content{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0px;
+  }
+  .qs{
+    margin: 0;
+  }
+}
+
+  @media  (max-width: 940px){
+    .logo-dem {
+      margin-right: 180px;
+      margin-top: 8.5px;      
+    }
+  
+    .logo-prefeitura {
+      margin-right: 180px;
+      margin-top: 8.5px;
+      display: block;
+      
+    }
+    #btnMenu{
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        cursor: pointer;
+        background: none;
+        border: none;
+    }
+    #menu{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background-color: #9c9c9c;
+        transition: .6s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: hidden;
+    }
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, .05);
+    }
+
 }

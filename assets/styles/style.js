@@ -5,4 +5,4 @@ function toggleMenu() {
     nav.classList.toggle('active');
 }
 
-btnMenu.addEventListener('click', toggleMenu);
+btnMenu.addEventListener('click', toggleMenu());
