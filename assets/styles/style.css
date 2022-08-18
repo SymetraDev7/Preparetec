@@ -420,7 +420,7 @@ h1{
   display: none;
 }
 .foto-card:hover{
-  transition: 0.5s;
+  cursor: pointer;
 }
 .foto-card:hover > .card-content{
   display: flex;
