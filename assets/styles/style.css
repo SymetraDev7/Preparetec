@@ -385,12 +385,17 @@ h1{
 .blue {
   color: #002841;
 }
+.listTitle{
+  font-size: 30px;
+  margin: 20px 0px;
+}
 .group-list{
   display: flex;
   align-items: center;
 }
 .group-list .logo-dem, .group-list .logo-prefeitura{
   height: 150px;
+  margin: 0px 40px;
 }
 .group-list .logo-prefeitura{
   width: 160px;
@@ -405,20 +410,50 @@ h1{
   width: 200px;
   justify-content: flex-end;
   background-size: cover;
+  transition: 0.5s;
+  border: #3C8F5D 2px solid;
+  border-radius: 10%;
+  margin: 0px 40px;
+  background-position: center;
 }
 .card-content{
   display: none;
 }
+.foto-card:hover{
+  transition: 0.5s;
+}
 .foto-card:hover > .card-content{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 60px;
+  height: 40%;
   background-color: #f3f3f3;
   color: #000;
+  transition: 0.5s;
+  padding: 10px;
+  text-align: center;
+}
+.foto-card:hover > .nome-card{
+  transition: 0.5s;
 }
 #priscila-eleuterio{
   background-image: url('../images/priscila.jpeg');
+}
+#demerson{
+  background-image: url('../images/sophia.jpeg');
+}
+#felipe{
+  background-image: url('../images/felipe.jpg');
+}
+#ryan{
+  background-image: url('../images/sophia.jpeg');
+}
+#sophia{
+  background-image: url('../images/sophia.jpeg');
+}
+#thomas{
+  background-image: url('../images/thomas.jpg');
 }
 .nome-card{
   display: flex;
@@ -428,19 +463,14 @@ h1{
   color: #f3f3f3;
   height: 50px;
   width: 100%;
+  border-radius: 20px 20px 0 0;
 }
 
-.item p, .image-logo, .mentores {
+.item p, .image-logo, .apoiadores, .sobrenos, .funcionarios {
   margin: 30px;
 }
-
-/* nossa cara */
-.sobrenos {
-  display: flex;
-}
-
-.sobrenos img {
-  height: 300px;
+.professor{
+  background-image: url(../images/sem-foto-homem.jpg);
 }
 
 @media(max-width: 1100px) {
