@@ -17,6 +17,31 @@ body {
   background-color: #002841;
   scroll-behavior: smooth;
 }
+body::-webkit-scrollbar {
+  width: 8px;               /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: #f4f4f4;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #45B26F;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #f4f4f4;  /* creates padding around scroll thumb */
+}
+
+.group-list::-webkit-scrollbar {
+  width: 12px;
+  height: 10px;               /* width of the entire scrollbar */
+}
+.group-list::-webkit-scrollbar-track {
+  background: #002841;        /* color of the tracking area */
+}
+.group-list::-webkit-scrollbar-thumb {
+  background-color: #45B26F;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 2px solid #002841;  /* creates padding around scroll thumb */
+}
 
 .upper-header{
   position: fixed;
@@ -129,7 +154,7 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  min-height: 450px;
+  min-height: 80vh;
   background-color: #002841;
   font-size: 20px;
   background-image: url('../images/sala-de-aula.jpg');
@@ -151,12 +176,11 @@ h2 {
 .inicio-text {
   max-width: 1100px;
   margin: 30px;
-  text-align: center;
+  text-align: justify;
 }
 
 .links {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   width: 100%;
 }
@@ -179,7 +203,6 @@ h2 {
 }
 
 .list-links {
-  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -405,17 +428,17 @@ h1{
 .group-list{
   display: flex;
   align-items: center;
-  overflow-x: auto;
+  overflow-x: auto; 
 }
 .group-list .logo-dem, .group-list .logo-prefeitura{
   height: 150px;
   margin: 0px 40px;
 }
 .group-list .logo-prefeitura{
-  width: 160px;
+  min-width: 160px;
 }
 .group-list .logo-dem{
-  width: 360px;
+  min-width: 360px;
 }
 .foto-card{
   display: flex;
@@ -431,6 +454,7 @@ h1{
   border-radius: 10%;
   margin: 0px 40px;
   background-position: center;
+  margin-bottom: 10px;
 }
 .card-content p{
   display: none;
@@ -478,6 +502,7 @@ h1{
 #thomas{
   background-image: url('../images/thomas.jpg');
 }
+
 .nome-card p{
   display: flex;
   align-items: center;
@@ -560,7 +585,7 @@ footer{
 }
 .form-login h2{
   width: 100%;
-  height: 150px;
+  height: 120px;
   justify-content: center;
   color: #002841;
 }
@@ -633,13 +658,14 @@ TELA DE CADASTRO
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .form-cadastro{
+  margin-top: 10%;
   background-color: white;
   max-width: 700px;
   min-width: 70%;
-  min-height: 400px;
+  min-height: 300px;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   border: 1px solid #002841;
@@ -648,11 +674,11 @@ TELA DE CADASTRO
 }
 .form-cadastro h2{
   width: 100%;
-  height: 150px;
+  height: 120px;
   justify-content: center;
   color: #002841;
 }
-.form-cadstro .group-form{
+.form-cadastro .group-form{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -661,9 +687,14 @@ TELA DE CADASTRO
 .form-cadastro label{
   margin: 10px;
 }
-.form-cadastro .input-login{
+
+.form-cadastro .input-cadastro, .form-cadastro select{
   width: 280px;
-  height: 20px;
+  height: 35px;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 18px;
+  border: 0.5px solid #002841;
 }
 .form-cadastro .button-submit{
   display: flex;
@@ -683,6 +714,22 @@ TELA DE CADASTRO
 .form-cadastro .button-submit:hover{
   background-color: #002841;
   color: #f4f4f4;
+}
+.group-professores{
+  display: none;
+  flex-direction: column;
+}
+.group-alunos{
+  display: none;
+  flex-direction: column;
+}
+.group-professores div, .group-alunos div{
+  margin: 10px 0;
+  display: flex;
+}
+.form-cadastro #polos{
+  display: flex;
+  max-width: 20px;
 }
 @media(max-width: 1100px) {
   #bonequinho-container {
@@ -762,6 +809,19 @@ TELA DE CADASTRO
   }
   .qs{
     margin: 0;
+  }
+  #inicio-content, .links, .nosso-projeto-texto1, .nosso-projeto-texto2, .texto-polos, .card-polos, .prof-content, .qs p {
+    font-size: 15px;
+    display: flex;
+  }
+  .listTitle{
+    font-size: 18px;
+  }
+  h2{
+    font-size: 25px;
+  }
+  .alunos, .professores{
+    width: 200px;
   }
 }
 
