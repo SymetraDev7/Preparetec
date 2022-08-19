@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>LOGIN - PREPARETEC</title>
+
+    <link rel="stylesheet" type="text/css" href="../assets/styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header-login">
+        <a href='index.html'>
+            <article class='left-upper'>
+            </article>
+        </a>
+        <article class="right-upper">
+            <a href=""><aside class="logo-dem"></aside></a>
+            <a href="https://mongagua.sp.gov.br/"><aside class="logo-prefeitura"></aside></a>
+        </article>
+    </header>
+    <main class="main-login">
+        <form action="" method="post" class="form-login">
+            <h2>LOGIN</h2>
+            <!--<label>Selecione o tipo de usuário:</label>
+            <select name="tipo-usuario" id="tipo-usuario">
+                <option value="administrador">Administrador</option>
+                <option value="professor">Professor</option>
+                <option value="aluno">Aluno</option>
+            </select>-->
+            <div class="group-form">
+                <label>Insira seu login, e-mail ou telefone:</label>
+                <input class="input-login" type='text' id='login' required>
+                <label>Insira sua senha:</label>
+                <input class="input-login" type="password" id='senha' minlength="8" required>
+                <input class='button-submit' type="submit" value="Enviar">
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
