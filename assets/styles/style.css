@@ -398,6 +398,9 @@ h1{
 .group-list{
   display: flex;
   align-items: center;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: blue orange;
 }
 .group-list .logo-dem, .group-list .logo-prefeitura{
   height: 150px;
@@ -426,6 +429,7 @@ h1{
 }
 .card-content p{
   display: none;
+  overflow-y: hidden;
 }
 .foto-card:hover > .card-content p{
   display: block;
@@ -455,13 +459,13 @@ h1{
   background-image: url('../images/priscila.jpeg');
 }
 #demerson{
-  background-image: url('../images/sophia.jpeg');
+  background-image: url('../images/sem-foto-homem.jpg');
 }
 #felipe{
   background-image: url('../images/felipe.jpg');
 }
 #ryan{
-  background-image: url('../images/sophia.jpeg');
+  background-image: url('../images/sem-foto-homem.jpg');
 }
 #sophia{
   background-image: url('../images/sophia.jpeg');
