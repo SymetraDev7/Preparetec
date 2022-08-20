@@ -1,0 +1,248 @@
+/* 
+
+
+TELA DE CADASTRO
+
+
+*/
+
+.header-cadastro{
+    margin: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    height: 70px;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 30px #000;
+    position: fixed;
+  }
+  .header-cadastro .left-upper{
+    margin: 0px 20px;
+  }
+  .header-cadastro .right-upper .logo-dem, .header-cadastro .right-upper .logo-prefeitura{
+    margin: 0;
+  }
+  .header-cadastro .right-upper{
+    margin-right: 30px;
+  }
+  .main-cadastro{
+    margin-top: 0;
+    min-height: 100vh;
+    background-image: url('../images/sala-de-aula.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+  }
+  .form-cadastro{
+    margin-top: 10%;
+    background-color: white;
+    max-width: 700px;
+    min-width: 70%;
+    min-height: 300px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #002841;
+    border-radius: 30px;
+    box-shadow: #000 3px 3px 30px;
+  }
+  .form-cadastro h2{
+    width: 100%;
+    height: 120px;
+    justify-content: center;
+    color: #002841;
+  }
+  .form-cadastro .group-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-cadastro label{
+    margin: 10px;
+  }
+  
+  .form-cadastro .input-cadastro, .form-cadastro select{
+    width: 280px;
+    height: 35px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 18px;
+    border: 0.5px solid #002841;
+  }
+  .form-cadastro .button-submit{
+    display: flex;
+    height: 50px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border: 2px solid #002841;
+    border-radius: 10px;
+    background-color: #afbec7;
+    color: #002841;
+    font-size: 15px;
+    font-weight: 700;
+    transition: 0.2s;
+  }
+  .form-cadastro .button-submit:hover{
+    background-color: #002841;
+    color: #f4f4f4;
+  }
+  .group-professores{
+    display: none;
+    flex-direction: column;
+  }
+  .group-alunos{
+    display: none;
+    flex-direction: column;
+  }
+  .group-professores div, .group-alunos div{
+    margin: 10px 0;
+    display: flex;
+  }
+  .form-cadastro #polos{
+    display: flex;
+    max-width: 20px;
+  }
+  @media(max-width: 1100px) {
+    #bonequinho-container {
+      display: none;
+    }
+  
+    #logos img {
+      height: 60px;
+    }
+  }
+  
+  @media(max-width: 700px) {
+    .qs p{
+      width: 100%;
+     }
+    #chats img {
+      height: 50px;
+    }
+  
+    #logos img {
+      height: 50px;
+    }
+  
+    .card-polos {
+      width: 260px;
+      height: 260px;
+      font-size: 19px;
+      margin: 10% 0px;
+    }
+  
+    .titulo-card-polos {
+      height: 100px;
+    }
+  
+    .links {
+      align-items: center;
+      flex-direction: column;
+    }
+    .item {
+      width: 300px;
+    }
+    .item-center{
+      width: 300px;
+    }
+  
+    .upper-header{
+      min-height: 30px;
+    }
+    .left-upper{
+      width: 187.5px;
+      height: 27.5px;
+      margin: 0; padding: 0;
+    }
+    .right-upper{
+      display: flex;
+      width: 25%;
+      justify-content: space-between;
+    }
+    .logo-dem{
+      width: 65.5px;
+      height: 27.5px;
+    }
+    .logo-prefeitura{
+      width: 30px;
+      height: 27.5px;
+    }
+    .header-index{
+      margin-top: 30px;
+    }
+    .main-index{
+      margin-top: 90px;
+    }
+    .quem-somos-content{
+      display: flex;
+      flex-direction: column;
+      margin: 30px 0px;
+    }
+    .qs{
+      margin: 0;
+    }
+    #inicio-content, .links, .nosso-projeto-texto1, .nosso-projeto-texto2, .texto-polos, .card-polos, .prof-content, .qs p {
+      font-size: 15px;
+      display: flex;
+    }
+    .listTitle{
+      font-size: 18px;
+    }
+    h2{
+      font-size: 25px;
+    }
+    .alunos, .professores{
+      width: 200px;
+    }
+  }
+  
+    @media  (max-width: 940px){
+      .logo-dem {
+        margin-right: 180px;
+        margin-top: 8.5px;      
+      }
+    
+      .logo-prefeitura {
+        margin-right: 180px;
+        margin-top: 8.5px;
+        display: block;
+        
+      }
+      #btnMenu{
+          display: flex;
+          padding: .5rem 1rem;
+          font-size: 1rem;
+          cursor: pointer;
+          background: none;
+          border: none;
+      }
+      #menu{
+          display: block;
+          position: absolute;
+          width: 100%;
+          top: 70px;
+          right: 0px;
+          background-color: #9c9c9c;
+          transition: .6s;
+          z-index: 1000;
+          height: 0px;
+          visibility: hidden;
+          overflow-y: hidden;
+      }
+      #nav.active #menu {
+          height: calc(100vh - 70px);
+          visibility: visible;
+          overflow-y: hidden;
+      }
+      #menu a {
+          padding: 1rem 0;
+          margin: 0 1rem;
+          border-bottom: 2px solid rgba(0, 0, 0, .05);
+      }
+  
+  }
