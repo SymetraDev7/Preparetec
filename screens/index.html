@@ -361,6 +361,11 @@
   </main>
   <script src="../assets/src/index.js"></script>
   <script src="../assets/styles/style.js"></script>
+  <script>
+    fetch('http://localhost:3333/admin/professores').then(response => response.json()).then(json => console.log(json))    //imprimir dados no console
+    .catch(err => console.log('Erro de solicitação', err)); // lidar com os erros por catch
+  </script>
+
 
 </body>
 
