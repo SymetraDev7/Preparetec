@@ -1,11 +1,20 @@
-// const btnMenu = document.getElementById('btnMenu');
+const body = document.querySelector("body"),
+        nav = document.querySelector("nav"),
+        sidebarAbrir = document.querySelector(".sidebarAbrir"),
+        sidebarFechar = document.querySelector(".sidebarFechar");
 
-// function toggleMenu() {
-//     const nav = document.getElementById('nav');
-//     nav.classList.toggle('active');
-// }
+    //função menu lateral responsivo
+    sidebarAbrir.addEventListener("click" , () =>{
+        nav.classList.add("ativar");
+    });
 
-// btnMenu.addEventListener('click', toggleMenu());
+    body.addEventListener("click", e =>{
+        let clicarElem = e.target;
+
+        if(!clicarElem.classList.contains("sidebarAbrir") && !clicarElem.classList.contains("menu")){
+            nav.classList.remove("ativar");
+        }
+    });
 
 var formProfessores = document.querySelector('.group-professores')
 var formAlunos = document.querySelector('.group-alunos')

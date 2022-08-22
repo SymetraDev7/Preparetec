@@ -571,3 +571,44 @@ footer{
   background-color: purple;
   border-radius: 10px;
 }
+
+ .sidebarAbrir{
+  color: #fff;
+  font-size: 25px;
+  padding: 5px;
+
+  display: none;
+}
+
+.sidebarFechar{
+
+  font-size: 24px;
+
+}
+
+.toggle {
+  display: none;
+}
+
+
+
+
+
+@media (max-width: 790px) {
+
+  .sidebarAbrir{
+
+      color: #000;
+      cursor: pointer;
+  }
+  
+
+
+  .sidebarFechar{
+      color: #fff;
+      font-size: 24px;
+      cursor: pointer;
+  }
+
+
+}
