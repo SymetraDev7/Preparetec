@@ -514,7 +514,7 @@ h1 {
 .foto-card:hover>.card-content {
   visibility: visible;
   display: flex;
-  height: 120px;
+  height: 160px;
   padding: 10px;
 }
 
@@ -540,6 +540,15 @@ h1 {
 
 #thomas {
   background-image: url('../images/thomas.jpg');
+}
+#dalva{
+  background-image: url('../images/dalva-verardo.jpeg');
+}
+#felipe-luiz{
+  background-image: url('../images/felipe-luiz.jpeg');
+}
+#alexandre{
+  background-image: url('../images/alexandre.jpeg');
 }
 
 .nome-card p {
