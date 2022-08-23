@@ -635,6 +635,30 @@ footer {
   text-decoration: dashed;
   color: #fff;
 }
+/* reponsividade do footer */
+@media (max-width: 700px) {
+  .envolvidos{
+    margin: 20px;
+    justify-content: center;
+    text-align: center;
+    border-top: 2px solid white;
+    padding: 20px;
+  }
+  .contato{
+    border-left: none;
+    border-top: 3px solid white;
+    margin-top: 20px;
+  }
+  .link-footer{
+    border-top: 3px solid white;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+
+  .link-footer .item-footer{
+    text-align: center;
+  }
+}
 
 .envolvidos .symetra {
   color: white;
