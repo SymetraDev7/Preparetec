@@ -9,7 +9,6 @@
   <title>PREPARETEC</title>
 
   <link rel="stylesheet" type="text/css" href="../assets/styles/style.css" />
-  <link rel="stylesheet" type="text/css" href="../assets/styles/cadastro.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -377,7 +376,7 @@
   <script src="../assets/src/index.js"></script>
   <script src="../assets/styles/style.js"></script>
   <script>
-    fetch('http://localhost:3333/admin/professores').then(response => response.json()).then(json => console.log(json))    //imprimir dados no console
+    fetch('http://localhost:3333/api/admin/professores').then(response => response.json()).then(json => console.log(json))    //imprimir dados no console
     .catch(err => console.log('Erro de solicitação', err)); // lidar com os erros por catch
   </script>
 

@@ -8,7 +8,7 @@
 
     <title>LOGIN - PREPARETEC</title>
 
-    <link rel="stylesheet" type="text/css" href="../assets/styles/login.css" />
+    <link rel="stylesheet" type="text/css" href="./../assets/styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -30,7 +30,7 @@
         </article>
     </header>
     <main class="main-login">
-        <form action="feed-principal.html" method="post" class="form-login">
+        <form action="/" method="get" class="form-login">
             <h2>LOGIN</h2>
             <!--<label>Selecione o tipo de usuário:</label>
             <select name="tipo-usuario" id="tipo-usuario">
@@ -40,13 +40,15 @@
             </select>-->
             <div class="group-form">
                 <label>Insira seu RA, e-mail ou telefone:</label>
-                <input class="input-login" type='text' id='login' required>
+                <input class="input-login" name="login" type='text' id='login' required>
                 <label>Insira sua senha:</label>
-                <input class="input-login" type="password" id='senha' minlength="8" required>
-                <input class='button-submit' type="submit" value="Enviar">
+                <input class="input-login" name="password" type="password" id='senha' minlength="8" required>
+                <input class='button-submit' type="submit" value="Enviar" onclick="Login()" />
             </div>
         </form>
     </main>
+
+    <script src="../assets/src/fetch.js"></script>
 </body>
 
 </html>
