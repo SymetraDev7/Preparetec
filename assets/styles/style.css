@@ -642,18 +642,23 @@ footer {
   border-radius: 10px;
 }
 
-.sidebarAbrir {
-  color: #fff;
-  font-size: 25px;
-  padding: 5px;
+.menuAbrir{
+  display: flex;
+  flex-direction: row;
+}
 
+.menuAbrir i{
   display: none;
 }
 
+.sidebarAbrir {
+  cursor: pointer;
+  font-size: 25px;
+  padding: 5px;
+}
+
 .sidebarFechar {
-
   font-size: 24px;
-
 }
 
 .toggle {
@@ -907,6 +912,28 @@ TELA DE CADASTRO
 }
 
 @media (max-width: 940px) {
+  
+ .menuAbrir{
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.toggle{
+  left: -0%;
+}
+
+nav.ativar .menuAbrir {
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+  .sidebarAbrir{
+    cursor: pointer;
+    font-size: 25px;
+    padding: 5px;
+    display: block;
+  }
+  
   .logo-dem {
     margin-right: 180px;
     margin-top: 8.5px;
@@ -1044,21 +1071,3 @@ TELA DE CADASTRO
   color: #f4f4f4;
 }
 
-@media (max-width: 790px) {
-
-  .sidebarAbrir {
-
-    color: #000;
-    cursor: pointer;
-  }
-
-
-
-  .sidebarFechar {
-    color: #fff;
-    font-size: 24px;
-    cursor: pointer;
-  }
-
-
-}
