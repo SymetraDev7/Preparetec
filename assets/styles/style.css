@@ -1,9 +1,5 @@
 /*
-
-
 //TELA PRINCIPAL
-
-
 */
 * {
   margin: 0;
@@ -17,33 +13,47 @@ body {
   background-color: #002841;
   scroll-behavior: smooth;
 }
+
 body::-webkit-scrollbar {
-  width: 8px;               /* width of the entire scrollbar */
+  width: 8px;
+  /* width of the entire scrollbar */
 }
+
 body::-webkit-scrollbar-track {
-  background: #f4f4f4;        /* color of the tracking area */
+  background: #f4f4f4;
+  /* color of the tracking area */
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #45B26F;    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 3px solid #f4f4f4;  /* creates padding around scroll thumb */
+  background-color: #45B26F;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 3px solid #f4f4f4;
+  /* creates padding around scroll thumb */
 }
 
 .group-list::-webkit-scrollbar {
   width: 12px;
-  height: 10px;               /* width of the entire scrollbar */
-}
-.group-list::-webkit-scrollbar-track {
-  background: #002841;        /* color of the tracking area */
-}
-.group-list::-webkit-scrollbar-thumb {
-  background-color: #45B26F;    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 2px solid #002841;  /* creates padding around scroll thumb */
+  height: 10px;
+  /* width of the entire scrollbar */
 }
 
-.upper-header{
+.group-list::-webkit-scrollbar-track {
+  background: #002841;
+  /* color of the tracking area */
+}
+
+.group-list::-webkit-scrollbar-thumb {
+  background-color: #45B26F;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 2px solid #002841;
+  /* creates padding around scroll thumb */
+}
+
+.upper-header {
   position: fixed;
   background-color: #f4f4f4;
   min-height: 60px;
@@ -52,7 +62,8 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: space-between;
 }
-.left-upper{
+
+.left-upper {
   background-image: url('../images/logoPreparetec.png');
   background-size: cover;
   width: 395px;
@@ -60,21 +71,24 @@ body::-webkit-scrollbar-thumb {
   margin: 0px 20px;
   margin-top: 1%;
 }
-.right-upper{
+
+.right-upper {
   display: flex;
   min-width: 17%;
- 
+
   justify-content: space-between;
-  margin:  0, 30px;
+  margin: 0, 30px;
 }
-.logo-dem{
+
+.logo-dem {
   background-image: url('../images/logoDEM.png');
   background-size: cover;
   width: 135px;
   height: 55px;
   margin-top: 4.3%;
 }
-.logo-prefeitura{
+
+.logo-prefeitura {
   background-image: url('../images/logoPrefeituraMongagua.png');
   background-size: cover;
   width: 60px;
@@ -90,15 +104,15 @@ body::-webkit-scrollbar-thumb {
   background-color: #f3f3f3;
   border-radius: 0px 0px 20px 20px;
   position: fixed;
-}
-.header-index{
   margin-top: 60px;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
 }
 
 header nav ul {
   display: flex;
   width: 100%;
-  height: 60px;
   justify-content: center;
   align-items: center;
   list-style: none;
@@ -108,7 +122,9 @@ li {
   width: 200px;
   text-align: center;
 }
-
+#btnMenu{
+  display: none;
+}
 .btn-p {
   background-color: red;
   display: flex;
@@ -146,7 +162,7 @@ h2 {
   align-items: center;
 }
 
-#inicio-content h2{
+#inicio-content h2 {
   text-shadow: 1px 1px #ffffFF;
 }
 
@@ -330,9 +346,11 @@ h2 {
   background-color: #002841;
   padding: 2%;
 }
-h1{
+
+h1 {
   font-size: 40px;
 }
+
 .line-green {
   padding: 1px 30px;
   background-color: #98ffa8;
@@ -401,46 +419,57 @@ h1{
   margin-top: 30px;
   padding: 2%;
 }
-.quem-somos-content{
+
+.quem-somos-content {
   display: flex;
   flex-direction: column;
   margin: 50px 0px;
 }
-.qs{
+
+.qs {
   max-width: 750px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   margin: 0px 30px;
 }
- .qs p{
+
+.qs p {
   margin: 10px 0;
   text-align: justify;
   font-size: 20px;
- }
+}
+
 .blue {
   color: #002841;
 }
-.listTitle{
+
+.listTitle {
   font-size: 30px;
   margin: 20px 0px;
 }
-.group-list{
+
+.group-list {
   display: flex;
   align-items: center;
-  overflow-x: auto; 
+  overflow-x: auto;
 }
-.group-list .logo-dem, .group-list .logo-prefeitura{
+
+.group-list .logo-dem,
+.group-list .logo-prefeitura {
   height: 150px;
   margin: 0px 40px;
 }
-.group-list .logo-prefeitura{
+
+.group-list .logo-prefeitura {
   min-width: 160px;
 }
-.group-list .logo-dem{
+
+.group-list .logo-dem {
   min-width: 360px;
 }
-.foto-card{
+
+.foto-card {
   display: flex;
   flex-direction: column;
   min-height: 300px;
@@ -456,14 +485,17 @@ h1{
   background-position: center;
   margin-bottom: 10px;
 }
-.card-content p{
+
+.card-content p {
   display: none;
   overflow-y: hidden;
 }
-.foto-card:hover > .card-content p{
+
+.foto-card:hover>.card-content p {
   display: block;
 }
-.card-content{
+
+.card-content {
   visibility: hidden;
   height: 0;
   overflow-y: hidden;
@@ -475,35 +507,55 @@ h1{
   color: #000;
   text-align: center;
 }
-.foto-card:hover{
+
+.foto-card:hover {
   cursor: pointer;
 }
-.foto-card:hover > .card-content{
+
+.foto-card:hover>.card-content {
   visibility: visible;
   display: flex;
-  height: 120px;
+  height: 160px;
   padding: 10px;
 }
-#priscila-eleuterio{
+
+#priscila-eleuterio {
   background-image: url('../images/priscila.jpeg');
 }
-#demerson{
+
+#demerson {
   background-image: url('../images/sem-foto-homem.jpg');
 }
-#felipe{
+
+#felipe {
   background-image: url('../images/felipe.jpg');
 }
-#ryan{
+
+#ryan {
   background-image: url('../images/sem-foto-homem.jpg');
 }
-#sophia{
+
+#sophia {
   background-image: url('../images/sophia.jpeg');
 }
-#thomas{
+
+#thomas {
   background-image: url('../images/thomas.jpg');
 }
 
-.nome-card p{
+#dalva {
+  background-image: url('../images/dalva-verardo.jpeg');
+}
+
+#felipe-luiz {
+  background-image: url('../images/felipe-luiz.jpeg');
+}
+
+#alexandre {
+  background-image: url('../images/alexandre.jpeg');
+}
+
+.nome-card p {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -513,114 +565,137 @@ h1{
   width: 100%;
   border-radius: 20px 20px 0 0;
 }
-.item p, .image-logo, .apoiadores, .sobrenos, .funcionarios {
+
+.item p,
+.image-logo,
+.apoiadores,
+.sobrenos,
+.funcionarios {
   margin: 30px;
 }
-.professor{
+
+.professor {
   background-image: url(../images/sem-foto-homem.jpg);
 }
-footer{
+
+footer {
   background-color: #3C8F5D;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
-.logos-projeto{
-  width: 300px;
+
+.img-footer {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
 }
-.logos-projeto img{
+
+.img-footer img {
   height: 50px;
   margin: 10px;
 }
 
-/*
+.contato {
+  border-left: 2px solid #fff;
+  border-radius: 5px;
+  padding-left: 5px;
+  margin-left: 5px;
+  margin-right: 15px;
+}
 
-
-//TELA DE LOGIN
-
-
-*/
-
-.header-login{
-  margin: 0;
-  background-color: #f4f4f4;
-  display: flex;
-  height: 70px;
-  width: 100vw;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0px 0px 30px #000;
-  position: fixed;
-}
-.header-login .left-upper{
-  margin: 0px 20px;
-}
-.header-login .right-upper .logo-dem, .header-login .right-upper .logo-prefeitura{
-  margin: 0;
-}
-.header-login .right-upper{
-  margin-right: 30px;
-}
-.main-login{
-  margin-top: 0;
-  min-height: 100vh;
-  background-image: url('../images/sala-de-aula.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.form-login{
-  background-color: white;
-  max-width: 700px;
-  min-width: 70%;
-  min-height: 400px;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #002841;
-  border-radius: 30px;
-  box-shadow: #000 3px 3px 30px;
-}
-.form-login h2{
-  width: 100%;
-  height: 120px;
-  justify-content: center;
-  color: #002841;
-}
-.form-login .group-form{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.form-login label{
-  margin: 10px;
-}
-.form-login .input-login{
-  width: 280px;
-  height: 20px;
-}
-.form-login .button-submit{
-  display: flex;
+.contato img {
   height: 50px;
-  width: 100px;
+}
+
+.contato a {
+  text-decoration: dashed;
+}
+
+.link-footer {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
-  margin: 20px;
-  border: 2px solid #002841;
+}
+
+.item-footer {
+  justify-content: center;
+}
+
+.item-footer a {
+  color: white;
+}
+
+.envolvidos {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.envolvidos a {
+  text-decoration: dashed;
+  color: #fff;
+}
+
+/* reponsividade do footer */
+@media (max-width: 700px) {
+  .envolvidos {
+    margin: 20px;
+    justify-content: center;
+    text-align: center;
+    border-top: 2px solid white;
+    padding: 20px;
+  }
+
+  .contato {
+    border-left: none;
+    border-top: 3px solid white;
+    margin-top: 20px;
+  }
+
+  .link-footer {
+    border-top: 3px solid white;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+
+  .link-footer .item-footer {
+    text-align: center;
+  }
+}
+
+.envolvidos .symetra {
+  color: white;
+  background-color: purple;
   border-radius: 10px;
-  background-color: #afbec7;
-  color: #002841;
-  font-size: 15px;
-  font-weight: 700;
-  transition: 0.2s;
 }
-.form-login .button-submit:hover{
-  background-color: #002841;
-  color: #f4f4f4;
+
+.menuAbrir {
+  display: flex;
+  flex-direction: row;
 }
+
+.menuAbrir i {
+  display: none;
+}
+
+.sidebarAbrir {
+  cursor: pointer;
+  font-size: 25px;
+  padding: 5px;
+}
+
+.sidebarFechar {
+  font-size: 24px;
+}
+
+.toggle {
+  display: none;
+}
+
 
 /* 
 
@@ -630,7 +705,7 @@ TELA DE CADASTRO
 
 */
 
-.header-cadastro{
+.header-cadastro {
   margin: 0;
   background-color: #f4f4f4;
   display: flex;
@@ -641,16 +716,21 @@ TELA DE CADASTRO
   box-shadow: 0px 0px 30px #000;
   position: fixed;
 }
-.header-cadastro .left-upper{
+
+.header-cadastro .left-upper {
   margin: 0px 20px;
 }
-.header-cadastro .right-upper .logo-dem, .header-cadastro .right-upper .logo-prefeitura{
+
+.header-cadastro .right-upper .logo-dem,
+.header-cadastro .right-upper .logo-prefeitura {
   margin: 0;
 }
-.header-cadastro .right-upper{
+
+.header-cadastro .right-upper {
   margin-right: 30px;
 }
-.main-cadastro{
+
+.main-cadastro {
   margin-top: 0;
   min-height: 100vh;
   background-image: url('../images/sala-de-aula.jpg');
@@ -659,7 +739,8 @@ TELA DE CADASTRO
   display: flex;
   justify-content: center;
 }
-.form-cadastro{
+
+.form-cadastro {
   margin-top: 10%;
   background-color: white;
   max-width: 700px;
@@ -672,23 +753,27 @@ TELA DE CADASTRO
   border-radius: 30px;
   box-shadow: #000 3px 3px 30px;
 }
-.form-cadastro h2{
+
+.form-cadastro h2 {
   width: 100%;
   height: 120px;
   justify-content: center;
   color: #002841;
 }
-.form-cadastro .group-form{
+
+.form-cadastro .group-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.form-cadastro label{
+
+.form-cadastro label {
   margin: 10px;
 }
 
-.form-cadastro .input-cadastro, .form-cadastro select{
+.form-cadastro .input-cadastro,
+.form-cadastro select {
   width: 280px;
   height: 35px;
   padding: 5px;
@@ -696,7 +781,8 @@ TELA DE CADASTRO
   font-size: 18px;
   border: 0.5px solid #002841;
 }
-.form-cadastro .button-submit{
+
+.form-cadastro .button-submit {
   display: flex;
   height: 50px;
   width: 100px;
@@ -711,26 +797,33 @@ TELA DE CADASTRO
   font-weight: 700;
   transition: 0.2s;
 }
-.form-cadastro .button-submit:hover{
+
+.form-cadastro .button-submit:hover {
   background-color: #002841;
   color: #f4f4f4;
 }
-.group-professores{
+
+.group-professores {
   display: none;
   flex-direction: column;
 }
-.group-alunos{
+
+.group-alunos {
   display: none;
   flex-direction: column;
 }
-.group-professores div, .group-alunos div{
+
+.group-professores div,
+.group-alunos div {
   margin: 10px 0;
   display: flex;
 }
-.form-cadastro #polos{
+
+.form-cadastro #polos {
   display: flex;
   max-width: 20px;
 }
+
 @media(max-width: 1100px) {
   #bonequinho-container {
     display: none;
@@ -742,9 +835,10 @@ TELA DE CADASTRO
 }
 
 @media(max-width: 700px) {
-  .qs p{
+  .qs p {
     width: 100%;
-   }
+  }
+
   #chats img {
     height: 50px;
   }
@@ -768,105 +862,258 @@ TELA DE CADASTRO
     align-items: center;
     flex-direction: column;
   }
+
   .item {
     width: 300px;
   }
-  .item-center{
+
+  .item-center {
     width: 300px;
   }
 
-  .upper-header{
+  .upper-header {
     min-height: 30px;
   }
-  .left-upper{
+
+  .left-upper {
     width: 187.5px;
     height: 27.5px;
-    margin: 0; padding: 0;
+    margin: 0;
+    padding: 0;
   }
-  .right-upper{
+
+  .right-upper {
     display: flex;
     width: 25%;
     justify-content: space-between;
   }
-  .logo-dem{
+
+  .logo-dem {
     width: 65.5px;
     height: 27.5px;
   }
-  .logo-prefeitura{
+
+  .logo-prefeitura {
     width: 30px;
     height: 27.5px;
   }
-  .header-index{
+
+  .header-index {
     margin-top: 30px;
   }
-  .main-index{
+
+  .main-index {
     margin-top: 90px;
   }
-  .quem-somos-content{
+
+  .quem-somos-content {
     display: flex;
     flex-direction: column;
     margin: 30px 0px;
   }
-  .qs{
+
+  .qs {
     margin: 0;
   }
-  #inicio-content, .links, .nosso-projeto-texto1, .nosso-projeto-texto2, .texto-polos, .card-polos, .prof-content, .qs p {
+
+  #inicio-content,
+  .links,
+  .nosso-projeto-texto1,
+  .nosso-projeto-texto2,
+  .texto-polos,
+  .card-polos,
+  .prof-content,
+  .qs p {
     font-size: 15px;
     display: flex;
   }
-  .listTitle{
+
+  .listTitle {
     font-size: 18px;
   }
-  h2{
+
+  h2 {
     font-size: 25px;
   }
-  .alunos, .professores{
+
+  .alunos,
+  .professores {
     width: 200px;
   }
 }
 
-  @media  (max-width: 940px){
-    .logo-dem {
-      margin-right: 180px;
-      margin-top: 8.5px;      
-    }
-  
-    .logo-prefeitura {
-      margin-right: 180px;
-      margin-top: 8.5px;
-      display: block;
-      
-    }
-    #btnMenu{
-        display: flex;
-        padding: .5rem 1rem;
-        font-size: 1rem;
-        cursor: pointer;
-        background: none;
-        border: none;
-    }
-    #menu{
-        display: block;
-        position: absolute;
-        width: 100%;
-        top: 70px;
-        right: 0px;
-        background-color: #9c9c9c;
-        transition: .6s;
-        z-index: 1000;
-        height: 0px;
-        visibility: hidden;
-        overflow-y: hidden;
-    }
-    #nav.active #menu {
-        height: calc(100vh - 70px);
-        visibility: visible;
-        overflow-y: hidden;
-    }
-    #menu a {
-        padding: 1rem 0;
-        margin: 0 1rem;
-        border-bottom: 2px solid rgba(0, 0, 0, .05);
-    }
+@media (max-width: 940px) {
+  .header-index{
+    justify-content: flex-start;
+  }
+  .menuAbrir {
+    flex-direction: column;
+    padding-top: 30px;
+  }
 
+  .toggle {
+    left: -0%;
+  }
+
+  nav.ativar .menuAbrir {
+    opacity: 0;
+    transition: all 0.4s ease;
+  }
+
+  .sidebarAbrir {
+    cursor: pointer;
+    font-size: 25px;
+    padding: 5px;
+    display: block;
+  }
+
+  .logo-dem {
+    margin-right: 180px;
+    margin-top: 8.5px;
+  }
+
+  .logo-prefeitura {
+    margin-right: 180px;
+    margin-top: 8.5px;
+    display: block;
+
+  }
+
+  #btnMenu {
+    display: flex;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    z-index: 3;
+    top: 0;
+  }
+
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100px;
+    top: 70px;
+    right: 0px;
+    background-color: #9c9c9c;
+    transition: .6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: hidden;
+  }
+
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, .05);
+  }
+
+}
+
+/*
+
+
+//TELA DE LOGIN
+
+
+*/
+
+.header-login {
+  margin: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  height: 70px;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 0px 30px #000;
+  position: fixed;
+}
+
+.header-login .left-upper {
+  margin: 0px 20px;
+}
+
+.header-login .right-upper .logo-dem,
+.header-login .right-upper .logo-prefeitura {
+  margin: 0;
+}
+
+.header-login .right-upper {
+  margin-right: 30px;
+}
+
+.main-login {
+  margin-top: 0;
+  min-height: 100vh;
+  background-image: url('../images/sala-de-aula.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-login {
+  background-color: white;
+  max-width: 700px;
+  min-width: 70%;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #002841;
+  border-radius: 30px;
+  box-shadow: #000 3px 3px 30px;
+}
+
+.form-login h2 {
+  width: 100%;
+  height: 120px;
+  justify-content: center;
+  color: #002841;
+}
+
+.form-login .group-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-login label {
+  margin: 10px;
+}
+
+.form-login .input-login {
+  width: 280px;
+  height: 20px;
+}
+
+.form-login .button-submit {
+  display: flex;
+  height: 50px;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  border: 2px solid #002841;
+  border-radius: 10px;
+  background-color: #afbec7;
+  color: #002841;
+  font-size: 15px;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.form-login .button-submit:hover {
+  background-color: #002841;
+  color: #f4f4f4;
 }

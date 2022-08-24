@@ -88,8 +88,8 @@
           }),
         })
           .then((response) => response.json())
-          .then((res) => {
-            switch (res.code) {
+          .then((login) => {
+            switch (login.code) {
               case 200:
                 window.location.href = "http://localhost:5500/screens/";
                 break;
