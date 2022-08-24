@@ -40,7 +40,7 @@
                 <option value="aluno">Aluno</option>
             </select>-->
         <div class="group-form">
-          <label>Insira seu RA, e-mail ou telefone:</label>
+          <label>Insira seu e-mail:</label>
           <input
             class="input-login"
             type="text"
@@ -57,26 +57,28 @@
             minlength="8"
             required
           />
-          <button
-            class="button-submit"
-            type="submit"
-            id="signin-btn-submit"
-            value="Enviar"
-          ></button>
+          <button class="button-submit" type="submit" id="signin-btn-submit">
+            <label class="loader" style="display: none">Carregando</label>
+            <label class="textDefault">Entrar</label>
+          </button>
         </div>
       </form>
     </main>
     <script>
+      let loader = document.querySelector(".loader");
+      let textDefault = document.querySelector(".textDefault");
       const form = {
         email: document.querySelector("#login"),
         password: document.querySelector("#senha"),
         submit: document.querySelector("#signin-btn-submit"),
       };
       let button = form.submit.addEventListener("click", (e) => {
-        const login = "http://localhost:3333/api/admin/login";
         e.preventDefault();
+        loader.style.display = "block";
+        textDefault.style.display = "none";
+        const url = "http://localhost:3333/api/admin/login";
 
-        fetch(login, {
+        fetch(url, {
           method: "POST",
           headers: {
             Accept: "application/json, text/plain, */*",
@@ -95,13 +97,21 @@
                 break;
               case 404:
                 alert("Usuario  Não Encontrado");
+                loader.style.display = "none";
+                textDefault.style.display = "block";
                 break;
               case 403:
                 alert("Senha Incorreta");
+                loader.style.display = "none";
+                textDefault.style.display = "block";
             }
           })
           .catch((err) => {
-            console.log(err);
+            alert(
+              "Ocorreu Um Erro Para Se Conectar Ao Servidor, Tente Recarregar A Página, Se O Erro Persistir Entre Em Contato Com O Suporte Técnico Através Do Endereço De Email: SymetraStack@gmail.com"
+            );
+            loader.style.display = "none";
+            textDefault.style.display = "block";
           });
       });
     </script>

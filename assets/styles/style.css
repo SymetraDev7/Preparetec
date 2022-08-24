@@ -25,7 +25,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #45B26F;
+  background-color: #45b26f;
   /* color of the scroll thumb */
   border-radius: 20px;
   /* roundness of the scroll thumb */
@@ -45,7 +45,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .group-list::-webkit-scrollbar-thumb {
-  background-color: #45B26F;
+  background-color: #45b26f;
   /* color of the scroll thumb */
   border-radius: 20px;
   /* roundness of the scroll thumb */
@@ -64,7 +64,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .left-upper {
-  background-image: url('../images/logoPreparetec.png');
+  background-image: url("../images/logoPreparetec.png");
   background-size: cover;
   width: 395px;
   height: 55px;
@@ -81,7 +81,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .logo-dem {
-  background-image: url('../images/logoDEM.png');
+  background-image: url("../images/logoDEM.png");
   background-size: cover;
   width: 135px;
   height: 55px;
@@ -89,7 +89,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .logo-prefeitura {
-  background-image: url('../images/logoPrefeituraMongagua.png');
+  background-image: url("../images/logoPrefeituraMongagua.png");
   background-size: cover;
   width: 60px;
   height: 55px;
@@ -122,7 +122,7 @@ li {
   width: 200px;
   text-align: center;
 }
-#btnMenu{
+#btnMenu {
   display: none;
 }
 .btn-p {
@@ -155,7 +155,7 @@ nav ul li a {
 }
 
 h2 {
-  color: #3C8F5D;
+  color: #3c8f5d;
   font-size: 40px;
   height: 60px;
   display: flex;
@@ -163,7 +163,7 @@ h2 {
 }
 
 #inicio-content h2 {
-  text-shadow: 1px 1px #ffffFF;
+  text-shadow: 1px 1px #ffffff;
 }
 
 #mapa {
@@ -173,7 +173,7 @@ h2 {
   min-height: 80vh;
   background-color: #002841;
   font-size: 20px;
-  background-image: url('../images/sala-de-aula.jpg');
+  background-image: url("../images/sala-de-aula.jpg");
   background-attachment: fixed;
   background-size: cover;
 }
@@ -271,7 +271,7 @@ h2 {
 }
 
 .nosso-projeto-imagem1 {
-  background-image: url('../images/garoto-notebook.png');
+  background-image: url("../images/garoto-notebook.png");
   width: 307.5px;
   height: 254.25px;
   background-size: cover;
@@ -279,15 +279,14 @@ h2 {
 }
 
 .nosso-projeto-imagem2 {
-  background-image: url('../images/calculadora.jpg');
+  background-image: url("../images/calculadora.jpg");
   width: 150px;
   height: 150px;
   background-size: cover;
 }
 
 .nosso-projeto-imagem3 {
-
-  background-image: url('../images/atomo.png');
+  background-image: url("../images/atomo.png");
   width: 200px;
   height: 200px;
   background-size: cover;
@@ -309,7 +308,7 @@ h2 {
 }
 
 .card-polos {
-  background-color: #45B26F;
+  background-color: #45b26f;
   height: 450px;
   width: 450px;
   border-radius: 50%;
@@ -479,7 +478,7 @@ h1 {
   justify-content: flex-end;
   background-size: cover;
   transition: 0.5s;
-  border: #3C8F5D 2px solid;
+  border: #3c8f5d 2px solid;
   border-radius: 10%;
   margin: 0px 40px;
   background-position: center;
@@ -491,7 +490,7 @@ h1 {
   overflow-y: hidden;
 }
 
-.foto-card:hover>.card-content p {
+.foto-card:hover > .card-content p {
   display: block;
 }
 
@@ -512,7 +511,7 @@ h1 {
   cursor: pointer;
 }
 
-.foto-card:hover>.card-content {
+.foto-card:hover > .card-content {
   visibility: visible;
   display: flex;
   height: 160px;
@@ -520,46 +519,46 @@ h1 {
 }
 
 #priscila-eleuterio {
-  background-image: url('../images/priscila.jpeg');
+  background-image: url("../images/priscila.jpeg");
 }
 
 #demerson {
-  background-image: url('../images/sem-foto-homem.jpg');
+  background-image: url("../images/sem-foto-homem.jpg");
 }
 
 #felipe {
-  background-image: url('../images/felipe.jpg');
+  background-image: url("../images/felipe.jpg");
 }
 
 #ryan {
-  background-image: url('../images/sem-foto-homem.jpg');
+  background-image: url("../images/sem-foto-homem.jpg");
 }
 
 #sophia {
-  background-image: url('../images/sophia.jpeg');
+  background-image: url("../images/sophia.jpeg");
 }
 
 #thomas {
-  background-image: url('../images/thomas.jpg');
+  background-image: url("../images/thomas.jpg");
 }
 
 #dalva {
-  background-image: url('../images/dalva-verardo.jpeg');
+  background-image: url("../images/dalva-verardo.jpeg");
 }
 
 #felipe-luiz {
-  background-image: url('../images/felipe-luiz.jpeg');
+  background-image: url("../images/felipe-luiz.jpeg");
 }
 
 #alexandre {
-  background-image: url('../images/alexandre.jpeg');
+  background-image: url("../images/alexandre.jpeg");
 }
 
 .nome-card p {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #3C8F5D;
+  background-color: #3c8f5d;
   color: #f3f3f3;
   height: 50px;
   width: 100%;
@@ -579,7 +578,7 @@ h1 {
 }
 
 footer {
-  background-color: #3C8F5D;
+  background-color: #3c8f5d;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -696,7 +695,6 @@ footer {
   display: none;
 }
 
-
 /* 
 
 
@@ -733,7 +731,7 @@ TELA DE CADASTRO
 .main-cadastro {
   margin-top: 0;
   min-height: 100vh;
-  background-image: url('../images/sala-de-aula.jpg');
+  background-image: url("../images/sala-de-aula.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -782,10 +780,19 @@ TELA DE CADASTRO
   border: 0.5px solid #002841;
 }
 
+.input-login {
+  height: 35px;
+  min-height: 35px;
+  padding: 5px;
+  font-size: 18px;
+  border-radius: 5px;
+  border-width: 0.5px;
+}
+
 .form-cadastro .button-submit {
+  cursor: pointer;
   display: flex;
   height: 50px;
-  width: 100px;
   justify-content: center;
   align-items: center;
   margin: 20px;
@@ -798,11 +805,14 @@ TELA DE CADASTRO
   transition: 0.2s;
 }
 
+.button-submit {
+  cursor: pointer;
+  min-width: 200px;
+}
 .form-cadastro .button-submit:hover {
   background-color: #002841;
   color: #f4f4f4;
 }
-
 .group-professores {
   display: none;
   flex-direction: column;
@@ -824,7 +834,7 @@ TELA DE CADASTRO
   max-width: 20px;
 }
 
-@media(max-width: 1100px) {
+@media (max-width: 1100px) {
   #bonequinho-container {
     display: none;
   }
@@ -834,7 +844,7 @@ TELA DE CADASTRO
   }
 }
 
-@media(max-width: 700px) {
+@media (max-width: 700px) {
   .qs p {
     width: 100%;
   }
@@ -943,7 +953,7 @@ TELA DE CADASTRO
 }
 
 @media (max-width: 940px) {
-  .header-index{
+  .header-index {
     justify-content: flex-start;
   }
   .menuAbrir {
@@ -976,12 +986,11 @@ TELA DE CADASTRO
     margin-right: 180px;
     margin-top: 8.5px;
     display: block;
-
   }
 
   #btnMenu {
     display: flex;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     font-size: 1rem;
     cursor: pointer;
     background: none;
@@ -997,7 +1006,7 @@ TELA DE CADASTRO
     top: 70px;
     right: 0px;
     background-color: #9c9c9c;
-    transition: .6s;
+    transition: 0.6s;
     z-index: 1000;
     height: 0px;
     visibility: hidden;
@@ -1013,9 +1022,8 @@ TELA DE CADASTRO
   #menu a {
     padding: 1rem 0;
     margin: 0 1rem;
-    border-bottom: 2px solid rgba(0, 0, 0, .05);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
   }
-
 }
 
 /*
@@ -1054,7 +1062,7 @@ TELA DE CADASTRO
 .main-login {
   margin-top: 0;
   min-height: 100vh;
-  background-image: url('../images/sala-de-aula.jpg');
+  background-image: url("../images/sala-de-aula.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
