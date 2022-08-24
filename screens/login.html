@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,44 +8,102 @@
     <title>LOGIN - PREPARETEC</title>
 
     <link rel="stylesheet" type="text/css" href="../assets/styles/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <header class="header-login">
-        <a href='index.html'>
-            <article class='left-upper'>
-            </article>
+      <a href="index.html">
+        <article class="left-upper"></article>
+      </a>
+      <article class="right-upper">
+        <a href="https://mongagua.sp.gov.br/educacao">
+          <aside class="logo-dem"></aside>
         </a>
-        <article class="right-upper">
-            <a href="https://mongagua.sp.gov.br/educacao">
-                <aside class="logo-dem"></aside>
-            </a>
-            <a href="https://mongagua.sp.gov.br/">
-                <aside class="logo-prefeitura"></aside>
-            </a>
-        </article>
+        <a href="https://mongagua.sp.gov.br/">
+          <aside class="logo-prefeitura"></aside>
+        </a>
+      </article>
     </header>
     <main class="main-login">
-        <form action="feed-principal.html" method="post" class="form-login">
-            <h2>LOGIN</h2>
-            <!--<label>Selecione o tipo de usuário:</label>
+      <form class="form-login">
+        <h2>LOGIN</h2>
+        <!--<label>Selecione o tipo de usuário:</label>
             <select name="tipo-usuario" id="tipo-usuario">
                 <option value="administrador">Administrador</option>
                 <option value="professor">Professor</option>
                 <option value="aluno">Aluno</option>
             </select>-->
-            <div class="group-form">
-                <label>Insira seu RA, e-mail ou telefone:</label>
-                <input class="input-login" type='text' id='login' required>
-                <label>Insira sua senha:</label>
-                <input class="input-login" type="password" id='senha' minlength="8" required>
-                <input class='button-submit' type="submit" value="Enviar">
-            </div>
-        </form>
+        <div class="group-form">
+          <label>Insira seu RA, e-mail ou telefone:</label>
+          <input
+            class="input-login"
+            type="text"
+            value="DalvinhaMandrak"
+            id="login"
+            required
+          />
+          <label>Insira sua senha:</label>
+          <input
+            class="input-login"
+            type="password"
+            id="senha"
+            value="12345678"
+            minlength="8"
+            required
+          />
+          <button
+            class="button-submit"
+            type="submit"
+            id="signin-btn-submit"
+            value="Enviar"
+          ></button>
+        </div>
+      </form>
     </main>
-</body>
+    <script>
+      const form = {
+        email: document.querySelector("#login"),
+        password: document.querySelector("#senha"),
+        submit: document.querySelector("#signin-btn-submit"),
+      };
+      let button = form.submit.addEventListener("click", (e) => {
+        const login = "http://localhost:3333/api/admin/login";
+        e.preventDefault();
 
+        fetch(login, {
+          method: "POST",
+          headers: {
+            Accept: "application/json, text/plain, */*",
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            login: form.email.value,
+            senha: form.password.value,
+          }),
+        })
+          .then((response) => response.json())
+          .then((res) => {
+            switch (res.code) {
+              case 200:
+                window.location.href = "http://localhost:5500/screens/";
+                break;
+              case 404:
+                alert("Usuario  Não Encontrado");
+                break;
+              case 403:
+                alert("Senha Incorreta");
+            }
+          })
+          .catch((err) => {
+            console.log(err);
+          });
+      });
+    </script>
+  </body>
 </html>
