@@ -7,116 +7,97 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>PREPARETEC</title>
-
+  <link rel="shortcut icon" href="../assets/images/LogoDEM.png" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="../assets/styles/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-  <section id='upper-header'>
-    <article>
-      <img src="../assets/images/logoPreparetec.png" alt="" />
-      <img src="../assets/images/logoDEM.png" alt="" />
-    </article>
-    <article id='chats'>
-      <div id='left-chat'>
-        <div class="baloes-left-chat">
-          <div class="balao-left">
-            <img src="../assets/images/balao1.png">
-          </div>
-          <div class="user-chat">
-            <img src="../assets/images/user-upper-header.png">
-          </div>
-        </div>
-        <div class="baloes-left-chat">
-          <div class="balao-left">
-            <img src="../assets/images/balao3.png">
-          </div>
-          <div class="user-chat">
-            <img src="../assets/images/user-upper-header.png">
-          </div>
-        </div>
-        <div class="baloes-left-chat">
-          <div class="balao-left">
-            <img src="../assets/images/balao4.png">
-          </div>
-          <div class="user-chat">
-            <img src="../assets/images/user-upper-header.png">
-          </div>
-        </div>
-      </div>
-      <div id='right-chat'>
-        <div class="baloes-right-chat">
-          <div class="balao-right">
-            <img src="../assets/images/balao2.png">
-          </div>
-          <div class="user-chat">
-            <img src="../assets/images/user-upper-header.png">
-          </div>
-        </div>
-      </div>
+  <section class='upper-header'>
+    <a href="">
+      <article class='left-upper'>
+      </article>
+    </a>
+    <article class="right-upper">
+      <a href="https://mongagua.sp.gov.br/educacao">
+        <aside class="logo-dem"></aside>
+      </a>
+      <a href="https://mongagua.sp.gov.br/">
+        <aside class="logo-prefeitura"></aside>
+      </a>
     </article>
   </section>
-  <header>
-    <nav>
-      <ul>
-        <li><a href='#mapa'>Calendário</a></li>
-        <li><a href="#nosso-projeto">Nosso Projeto</a></li>
-        <li><a href='#professores'>Professores</a></li>
-        <li><a href="#quem-somos">Quem Somos?</a></li>
-        <li><a href="#participe" class="btn-p">Participe</a></li>
+  <header class="header-index">
+    <nav id="nav">
+      <button id="btnMenu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-list"
+          viewBox="0 0 16 16" id="hamburguer">
+          <path fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+        </svg>
+      </button>
+      <ul id="menu">
+        <div class="menuAbrir">
+          <i class='bx bx-menu sidebarAbrir'></i>
+          <div class="toggle">
+
+            <i class='bx bx-x sidebarFechar'></i>
+          </div>
+          <li><a href='#mapa'>Calendário</a></li>
+          <li><a href="#nosso-projeto">Nosso Projeto</a></li>
+          <li><a href='#professores'>Professores</a></li>
+          <li><a href="#quem-somos">Quem Somos?</a></li>
+          <li><a href="#participe" class="btn-p">Participe</a></li>
+        </div>
       </ul>
     </nav>
   </header>
-  <main>
-    <section>
-      <article>
-        <h1>Seja Bem Vindo</h1>
-        <div>
+  <main class="main-index">
+    <section id='mapa'>
+      <article id='inicio-content'>
+        <h2>Seja Bem Vindo</h2>
+        <div class="inicio-text">
           Este É o Site Oficial do Projeto PREPARETEC, o cursinho preparatório
           para as escolas técnicas com ensino médio, uma iniciativa aprovada e
-          apoiada pela Prefeitura de Mongaguá e Pelo Departamento de Educação de
-          Mongaguá.
+          apoiada pela Prefeitura de Mongaguá e pelo Departamento de Educação de
+          Mongaguá. Nosso objetivo é atrair os alunos do Ensino Fundamental II, mais especificamente, alunos do 9º
+          (nono) ano do ensino fundamental e instigar neles o interesse de adentrar em uma escola técnica com ensino
+          médio, afim de recuperar o regresso dos alunos, consequência dos dois anos de pandemia e aulas em casa. Além
+          de plantar essa semente de interesse, também vamos orientá-los com os mais atualizados conteúdos que caem
+          constantemente nas provas, todas as matérias inclusas.
         </div>
       </article>
       <article class="links">
-        <aside>
-          <h1>Para Alunos:</h1>
+        <aside class="alunos">
+          <p>Para Alunos:</p>
           <ul class="list-links">
-            <li class=""><a href="">Acesse o Calendário</a></li>
-            <li><a href="">Saiba Mais</a></li>
+            <li class=""><a href="login.html">Acesse o Calendário</a></li>
+            <li><a href="#nosso-projeto">Saiba Mais</a></li>
             <li><a href="">Acessar Documentação</a></li>
           </ul>
         </aside>
-        <aside>
-          <h1>Para Professores:</h1>
+        <aside class="professores">
+          <p>Para Professores:</p>
           <ul class="list-links">
-            <!-- CORRIGIR A MARGEM DOS TEXTOS -->
             <li><a href="">Faça Parte</a></li>
             <li><a href="">Saiba Mais</a></li>
             <li><a href="">Acessar Documentação</a></li>
           </ul>
         </aside>
       </article>
-      <article>
-        <div class="agradecimentosContainer">
-          <label>Iniciativa Aprovada E Apoiada Por: </label>
-          <img src="/assets/images/logoDEM.png" alt="" />
-          <img src="/assets/images/logoPrefeituraMongagua.png" alt="" />
-          <img src="/assets/images/logoEscolaAdolphoBerezin.png" alt="" />
-        </div>
-      </article>
     </section>
-    <section class="nosso">
+    <section id="nosso-projeto">
       <article>
-        <h2>Nosso Projeto</h1>
-          <div class="line"></div>
+        <h2>Nosso Projeto</h2>
+        <div class="line"></div>
       </article>
       <article>
-        <aside class="flex-l">
-          <p>
+
+        <aside class='nosso-projeto-1'>
+          <div class='nosso-projeto-texto1'>
             Para realizar o sonho de estudar nas escolas técnicas, é necessário
             preparo com antecedência, por isso revisar e fixar as matérias das
             avaliações ao longo do ano, certamente poderá garantir um bom
@@ -127,149 +108,287 @@
             (Escola Técnica Estadual), onde o aluno poderá optar pelo ingresso
             no Ensino Médio, Integrado ou Técnico de acordo com edital de cada
             instituição.
-          </p>
-          <div class="imagesSection">
-            <img src="/assets/images/image1sectionAboutProject.png" alt="" />
-            <img src="/assets/images/image2sectionAboutProject.png" alt="" />
           </div>
+          <div class="nosso-projeto-imagem1"></div>
         </aside>
-        <aside class="flex-r">
-          <div class="item">
-            <img src="/assets/images/image3sectionAboutProject.png" alt="" />
-          </div>
-          <div class="item">
-            <p>
-              O curso é formado pelas disciplinas de Língua Portuguesa: Gramática,
-              Int. de Textos, Matemática, História, Geografia, Química, Física e
-              Biologia. Aulas de Inteligência Emocional, para que o aluno sinta-se
-              seguro emocionalmente durante a avaliação.
-            </p>
-          </div>
 
+        <aside class="nosso-projeto-2">
+          <div class="nosso-projeto-imagem2"></div>
+          <div class="nosso-projeto-imagem3"></div>
+          <div></div>
+          <div class="nosso-projeto-texto2">
+            O curso é formado pelas disciplinas de Língua Portuguesa: Gramática,
+            Int. de Textos, Matemática, História, Geografia, Química, Física e
+            Biologia. Aulas de Inteligência Emocional, para que o aluno sinta-se
+            seguro emocionalmente durante a avaliação.
+          </div>
         </aside>
+
+        <article id='polos'>
+          <h2>Como Vai Funcionar</h2>
+          <div class="line"></div>
+          <div class="container-polos">
+            <div class='card-polos'>
+              <div class="titulo-card-polos">Polo 1</div>
+              <div class="escolas-card-polos">E.M.E.F. Sirana Koukdjian</div>
+              <div class="escolas-card-polos">E.M.E.F Hortência Quintuno de Farias Botelho</div>
+              <div class="escolas-card-polos">E.M.E.F José Cesário Pereira Filho</div>
+            </div>
+            <div class='card-polos'>
+              <div class="titulo-card-polos">Polo 2</div>
+              <div class="escolas-card-polos">E.M.E.F. Jacoub Koukdjian</div>
+              <div class="escolas-card-polos">E.M.E.F Regina Maria</div>
+              <div class="escolas-card-polos">E.M.E.F Vereador José Carlos de Freitas</div>
+            </div>
+          </div>
+          <div class='polos-content'>
+            <div class="texto-polos">As aulas serão duas vezes na semana e serão divididas por polos, pra que fique mais
+              próximo de onde você, aluno,
+              mora e estuda! Esses polos estão descritos acima, para que você conheça seu polo de acordo com sua escola.
+              São aulas presenciais, e
+              os alunos cadastrados aqui no site terão acesso ao dia, horário e local das aulas aqui pelo site.</div>
+          </div>
+        </article>
       </article>
     </section>
-    <section class="prof">
+
+    <section id="professores">
       <article>
-        <h1>Professores</h1>
+        <h1 class="titulo-green">Professores</h1>
         <div class="line-green"></div>
       </article>
-      <article>
-        <aside>
-          <h2>Quem Pode?</h1>
-            <p class="item w">
-              Professoress, universitários voluntários ou Estagiários que se
-              disponibilizam a solucionar dúvidas sobre os conteúdos ministrados,
-              possibilitando o desenvolvimento de competências e habilidades do
-              aluno
-              <br />
-              O Cursinho preza pelo desenvolvimento dos monitores, fazendo com que
-              estes ministrem aulas esporádicas em conjunto com o tutor
-              (coordenação de área).
-            </p>
-        </aside>
-        <aside>
-          <img src="/assets/images/image1sectionTechers" alt="" />
-          <p class="w">
+      <h2>Quem Pode?</h2>
+      <article class="prof-content">
+        <div class="cont-professores">
+          <p class="item w">
+            Professores, universitários voluntários ou Estagiários que se
+            disponibilizam a solucionar dúvidas sobre os conteúdos ministrados,
+            possibilitando o desenvolvimento de competências e habilidades do
+            aluno.
+          </p>
+          <p class="item w">
+            O Cursinho preza pelo desenvolvimento dos monitores, fazendo com que
+            estes ministrem aulas esporádicas em conjunto com o tutor
+            (coordenação de área).
+          </p>
+          <p class="item w">
             E Aí, professor Preparado para embarcar nessa Jornada? é um trabalho
             voluntário de aproximadamente 2 horas semanais, e assinamos a carga
             horária
           </p>
-        </aside>
+          <a href="#participe" class="btn-p-main">Participe</a>
+        </div>
+        <img src="../assets/images/professor.png" height="200" alt="">
       </article>
-      <article><a href="#participe" class="btn-p">Participe</a></article>
     </section>
-    <section>
+    <section id="quem-somos">
       <article>
-        <h1>Quem Somos?</h1>
+        <h2 class="blue">Quem Somos?</h2>
+        <div class="line"></div>
       </article>
-      <article>
-        <p>
-          Devido a defasagem na aprendizagem dos alunos, decorrente da Pandemia
-          Covid-19, nos anos de 2020 a 2022, Nós do Departamento de Educação,
-          por meio da Coordenação de Área de Matemática, elaboramos o Projeto:
-          “PREPARETEC” , cujo objetivo é preparar os alunos dos 9º Ano da Rede
-          Municipal de Ensino de Mongaguá, que buscam o ingresso ao Ensino Médio
-          nas Escolas Técnicas Públicas Profissionalizantes (Etecs).
-        </p>
+      <article class="quem-somos-content">
+        <div class="qs">
+          <p>
+            Devido a defasagem na aprendizagem dos alunos, decorrente da Pandemia
+            Covid-19, nos anos de 2020 a 2022, Nós do Departamento de Educação,
+            por meio da Coordenação de Área de Matemática, elaboramos o Projeto:
+            “PREPARETEC” , cujo objetivo é preparar os alunos dos 9º Ano da Rede
+            Municipal de Ensino de Mongaguá, que buscam o ingresso ao Ensino Médio
+            nas Escolas Técnicas Públicas Profissionalizantes (Etecs).
+          </p>
+        </div>
+        <div class="qs">
+          <p>
+            Abaixo você verá a nossa equipe de voluntários que participaram para que esse projeto pudesse se tornar
+            realidade. Passando com o mouse por cima ou clicando, confira as informações sobre cada um.
+          </p>
+        </div>
       </article>
-      <article>
-        <img src="/assets/images/logoDEM.png" alt="" />
-        <img src="/assets/images/logoEscolaAdolphoBerezin.png" alt="" />
+
       </article>
-      <article>
-        <ul>
-          <li class="listTitle">Idealizadora:</li>
-          <li>Dalva Verardo - Coordenadora de Área de Matemática</li>
-          <li class="listTitle">Apoiadores E Colaboradores:</li>
-          <li>Priscila Eleutério - Diretora Municipal da Educação</li>
-          <li>Departamento de Educação de Mongaguá (DEM);</li>
-          <li>Prefeitura de Mongaguá;</li>
-          <li>ETEC Adolpho Berezin;</li>
-          <li class="listTitle">Symetra;</li>
-        </ul>
+      <article class="apoiadores">
+        <div class="listTitle">Projeto Elaborado por:</div>
+        <div class="group-list">
+          <div class="foto-card" id="priscila-eleuterio">
+            <div class="nome-card">
+              <p>Priscila Eleutério</p>
+            </div>
+            <div class="card-content">
+              <p>Diretora Municipal de Educação do Município de Mongaguá.</p>
+            </div>
+          </div>
+          <div class="logo-prefeitura"></div>
+          <div class="logo-dem"></div>
+        </div>
       </article>
-      <article>
-        <div class="card">
-          <img src="" alt="cade a foto demerson" />
-          <label class="devName">Demerson</label>
-          <label class="office">Desenvolvedor</label>
+
+      <article class="sobrenos">
+        <div class="listTitle">Site desenvolvido por:</div>
+        <div class="group-list">
+          <div class="foto-card" id="demerson">
+            <div class="nome-card">
+              <p>Demerson Guilherme</p>
+            </div>
+            <div class="card-content">
+              <p>Desenvolvedor do Website. Aluno da ETEC Adolpho Berezin, terceiro ano em Desenvolvimento de Sistemas.
+              </p>
+            </div>
+          </div>
+          <div class="foto-card" id="felipe">
+            <div class="nome-card">
+              <p>Felipe Barbosa</p>
+            </div>
+            <div class="card-content">
+              <p>Desenvolvedor do Website. Aluno da ETEC Adolpho Berezin, terceiro ano em Desenvolvimento de Sistemas.
+              </p>
+            </div>
+          </div>
+          <div class="foto-card" id="ryan">
+            <div class="nome-card">
+              <p>Ryan Gualberto</p>
+            </div>
+            <div class="card-content">
+              <p>Desenvolvedor do Website. Aluno da ETEC Adolpho Berezin, terceiro ano em Desenvolvimento de Sistemas.
+              </p>
+            </div>
+          </div>
+          <div class="foto-card" id="sophia">
+            <div class="nome-card">
+              <p>Sophia Verardo</p>
+            </div>
+            <div class="card-content">
+              <p>Desenvolvedora do Website. Aluna da ETEC Adolpho Berezin, terceiro ano em Desenvolvimento de Sistemas.
+              </p>
+            </div>
+          </div>
+          <div class="foto-card" id="thomas">
+            <div class="nome-card">
+              <p>Thomas Bastos</p>
+            </div>
+            <div class="card-content">
+              <p>Desenvolvedor do Website. Aluno da ETEC Adolpho Berezin, terceiro ano em Desenvolvimento de Sistemas.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="card">
-          <img src="/assets/images/felipe.jpg" />
-          <label class="devName">Felipe</label>
-          <label class="office"> Desenvolvedor</label>
-        </div>
-        <div class="card">
-          <img src="" alt="cade a foto ryan" />
-          <label class="devName">Ryan</label>
-          <label class="office"> Desenvolvedor</label>
-        </div>
-        <div class="card">
-          <img src="/assets/images/sophia.jpeg" />
-          <label class="devName">Sophia</label>
-          <label class="office"> Desenvolvedor</label>
-        </div>
-        <div class="card">
-          <img src="/assets/images/thomas.jpg" />
-          <label class="devName">Thomas</label>
-          <label class="office"> Desenvolvedor</label>
+      </article>
+
+      <article class="funcionarios">
+        <div class="listTitle">Professores do PREPARETEC:</div>
+        <div class="group-list">
+          <div class="foto-card professor" id="dalva">
+            <div class="nome-card">
+              <p>Dalva Verardo</p>
+            </div>
+            <div class="card-content">
+              <p>Coordenadora Diária e Idealizadora do Projeto. Licenciada em Matemática e Física.</p>
+            </div>
+          </div>
+          <div class="foto-card professor" id="felipe-luiz">
+            <div class="nome-card">
+              <p>Felipe Luiz Borges</p>
+            </div>
+            <div class="card-content">
+              <p>Professor de Português, licenciatura em Letras pela Unicid e Pedagogia pela Unifran.</p>
+              <p>Polo(s): 1 e 2.</p>
+            </div>
+          </div>
+          <div class="foto-card professor" id="alexandre">
+            <div class="nome-card">
+              <p>Alexandre Dalla Pria</p>
+            </div>
+            <div class="card-content">
+              <p>Conhecido como Prof. Barril, leciona Biologia e é graduado em Ciências Biológicas, estudou na Unesp e
+                na USP.</p>
+              <p>Polo(s): 1 e 2.</p>
+            </div>
+          </div>
+          <div class="foto-card professor">
+            <div class="nome-card">
+              <p>Professor 3</p>
+            </div>
+            <div class="card-content">
+              <p>Professor de Matemática e Física.</p>
+              <p>Polo(s): 2.</p>
+            </div>
+          </div>
+          <div class="foto-card professor">
+            <div class="nome-card">
+              <p>Professor 4</p>
+            </div>
+            <div class="card-content">
+              <p>Professor de Biologia e Química.</p>
+              <p>Polo(s): 1 e 2.</p>
+            </div>
+          </div>
+          <div class="foto-card professor">
+            <div class="nome-card">
+              <p>Professor 5</p>
+            </div>
+            <div class="card-content">
+              <p>Professor de História.</p>
+              <p>Polo(s): 1 e 2.</p>
+            </div>
+          </div>
         </div>
       </article>
     </section>
     <footer>
-      <article>
-        <aside><img src="/assets/images/logoPreparetec.png" /></aside>
-        <aside>
-          <h1>Contato:</h1>
-          <div class="linkGroups"></div>
-        </aside>
-        <aside>
-          <h1>Downloads</h1>
+      <div class="img-footer">
+        <img src="../assets/images/logoPreparetec.png" />
+        <img src="../assets/images/LogoDEM.png" />
+        <img src='../assets/images/logoPrefeituraMongagua.png'>
+        <img src="../assets/images/symetra.png" alt="">
+      </div>
+      <div class="contato">
+        <h3>Contato:</h3>
+        <a href="#face">
+          <img src="../assets/icones/face.png" alt="">
+        </a>
+        <a href="#insta">
+          <img src="../assets/icones/insta.png" alt="">
+        </a>
+        <a href="#email">
+          <img src="../assets/icones/email.png" alt="">
+        </a>
+      </div>
+      <div class="link-footer">
+        <div class="item-footer">
+          <h3>Downloads:</h3>
           <ul>
-            <li>Edital - Alunos</li>
-            <li>Documentação - Professores</li>
+            <li><a href="">Edital - Alunos</a> </li>
+            <li><a href="">Documentação - Professores</a> </li>
           </ul>
-        </aside>
-        <aside>
-          <h1>Links:</h1>
+        </div>
+        <div class="item-footer">
+          <h3>Links:</h3>
           <ul>
-            <li>Portal</li>
-            <li>Calendário</li>
-            <li>Inscrição De Professores</li>
+            <li><a href="">Portal</a> </li>
+            <li><a href="">Calendário</a> </li>
+            <li><a href="">Inscrição De Professores</a></li>
           </ul>
-        </aside>
-      </article>
-      <article>
-        <label>DEPARTAMENTO DE EDUCAÇÃO DE MONGAGUÁ</label>
-        <label> ETEC ADOLPHO BEREZIN</label>
-        <label> PREFEITURA DE MONGAGUÁ </label>
-        <label>PREPARETEC</label>
-        <label>SYMETRA</label>
-      </article>
+        </div>
+      </div>
+      <div class="envolvidos">
+        <a href="">DEPARTAMENTO DE EDUCAÇÃO DE MONGAGUÁ</a>
+        <a href="">ETEC ADOLPHO BEREZIN</a>
+        <a href="">PREFEITURA DE MONGAGUÁ</a>
+        <a href="">PREPARETEC</a>
+        <a href="" class="symetra">SYMETRA</a>
 
+      </div>
     </footer>
   </main>
+  <script src="../assets/src/index.js"></script>
+  <script src="../assets/styles/style.js"></script>
+  <script>
+
+    fetch('http://localhost:3333/api/admin/professores').then(response => response.json()).then(json => console.log(json))    //imprimir dados no console
+      .catch(err => console.log('Erro de solicitação', err)); // lidar com os erros por catch
+  </script>
+
+>>>>>>> d32ea5cd5fe9eb23ad2186853fbe750cd42982aa
+
 </body>
 
 </html>

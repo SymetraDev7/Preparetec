@@ -1,162 +1,1119 @@
+/*
+//TELA PRINCIPAL
+*/
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: #f4f4f4;
+  background-color: #002841;
+  scroll-behavior: smooth;
 }
 
-#upper-header {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    height: 400px;
-    background-color: #45B26F;
-}
-#chats{
-    display: flex;
-    width: 100%;
-    height: 100%;
-}
-#left-chat{
-    display: flex;
-    flex-wrap: wrap;
-    width: 372px;
-    height: 100%;
-}
-#upper-header article{
-    margin: 0; padding: 0;
-    height: 50px;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-#upper-header article img{
-    height: 50px;
-    margin: 0px 50px;
+body::-webkit-scrollbar {
+  width: 8px;
+  /* width of the entire scrollbar */
 }
 
-.baloes-left-chat, .baloes-right-chat{
-    display: flex;
-    flex-direction: column;
+body::-webkit-scrollbar-track {
+  background: #f4f4f4;
+  /* color of the tracking area */
 }
-.baloes-left-chat{
-    width: 372px;
+
+body::-webkit-scrollbar-thumb {
+  background-color: #45B26F;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 3px solid #f4f4f4;
+  /* creates padding around scroll thumb */
 }
-.balao-left img, .balao-right img{
-    min-height: 70px;
+
+.group-list::-webkit-scrollbar {
+  width: 12px;
+  height: 10px;
+  /* width of the entire scrollbar */
 }
-.user-chat{
-    min-height: 50px;
-    width: 100%;
-}.user-chat img{
-    display: flex;
-    text-align: left;
-    width: 50px;
+
+.group-list::-webkit-scrollbar-track {
+  background: #002841;
+  /* color of the tracking area */
 }
-header {
-    height: 60px;
-    width: 100%;
-    box-shadow: 5px 1px 15px #888888;
-    background-color: #F3F3F3;
-    border-radius: 0px 0px 20px 20px;
-    position: sticky;
-    top: 0;
+
+.group-list::-webkit-scrollbar-thumb {
+  background-color: #45B26F;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 2px solid #002841;
+  /* creates padding around scroll thumb */
+}
+
+.upper-header {
+  position: fixed;
+  background-color: #f4f4f4;
+  min-height: 60px;
+  width: 100vw;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-upper {
+  background-image: url('../images/logoPreparetec.png');
+  background-size: cover;
+  width: 395px;
+  height: 55px;
+  margin: 0px 20px;
+  margin-top: 1%;
+}
+
+.right-upper {
+  display: flex;
+  min-width: 17%;
+
+  justify-content: space-between;
+  margin: 0, 30px;
+}
+
+.logo-dem {
+  background-image: url('../images/logoDEM.png');
+  background-size: cover;
+  width: 135px;
+  height: 55px;
+  margin-top: 4.3%;
+}
+
+.logo-prefeitura {
+  background-image: url('../images/logoPrefeituraMongagua.png');
+  background-size: cover;
+  width: 60px;
+  height: 55px;
+  margin-top: 4.3%;
+  margin-right: 25px;
+}
+
+.header-index {
+  height: 60px;
+  width: 100%;
+  box-shadow: 5px -10px 30px #000;
+  background-color: #f3f3f3;
+  border-radius: 0px 0px 20px 20px;
+  position: fixed;
+  margin-top: 60px;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
 }
 
 header nav ul {
-    display: flex;
-    width: 100%;
-    height: 60px;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
 }
 
 li {
-    width: 200px;
-    text-align: center;
+  width: 200px;
+  text-align: center;
+}
+#btnMenu{
+  display: none;
+}
+.btn-p {
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 30px;
+  border-radius: 10px;
+  text-decoration: dashed;
 }
 
-.btn-p{
-    background-color: red;
-    color: white;
-    padding: 5px;
-    border-radius: 10px;
-    text-decoration: dashed;
-}
-.btn-p:hover{
-    color: black;
-    transition: 0.3s;
+.btn-p:hover {
+  color: black;
+  transition: 0.3s;
 }
 
 nav ul li a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #000;
-    display: flex;
-    width: 200px;
-    justify-content: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+  display: flex;
+  width: 200px;
+  justify-content: center;
 }
-article{
-    margin: 15px;
+
+.main-index {
+  margin-top: 120px;
 }
-h1{
-    color: #3C8F5D;
+
+h2 {
+  color: #3C8F5D;
+  font-size: 40px;
+  height: 60px;
+  display: flex;
+  align-items: center;
 }
-p{
+
+#inicio-content h2 {
+  text-shadow: 1px 1px #ffffFF;
+}
+
+#mapa {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 80vh;
+  background-color: #002841;
+  font-size: 20px;
+  background-image: url('../images/sala-de-aula.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#inicio-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #fff;
+  min-height: 300px;
+  max-height: 100%;
+}
+
+.inicio-text {
+  max-width: 1100px;
+  margin: 30px;
+  text-align: justify;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.alunos,
+.professores {
+  color: #f4f4f4;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  margin: 40px 0px;
+}
+
+.list-links li a,
+.list-links li {
+  color: #f4f4f4;
+  width: 100%;
+}
+
+.list-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#nosso-projeto {
+  background-color: #f4f4f4;
+  min-height: 700px;
+  padding: 2%;
+  font-size: 20px;
+}
+
+#nosso-projeto article h2 {
+  color: #002841;
+}
+
+.line {
+  padding: 1px 30px;
+  background-color: #002841;
+  margin-top: 15px;
+  width: 95%;
+}
+
+.nosso-projeto-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 450;
+}
+
+.nosso-projeto-2 {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 450;
+}
+
+.nosso-projeto-texto1 {
+  max-width: 820px;
+  text-align: justify;
+}
+
+.nosso-projeto-texto2 {
+  max-width: 400px;
+  text-align: justify;
+}
+
+.nosso-projeto-imagem1 {
+  background-image: url('../images/garoto-notebook.png');
+  width: 307.5px;
+  height: 254.25px;
+  background-size: cover;
+  margin: 20px;
+}
+
+.nosso-projeto-imagem2 {
+  background-image: url('../images/calculadora.jpg');
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+}
+
+.nosso-projeto-imagem3 {
+
+  background-image: url('../images/atomo.png');
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+}
+
+#polos h2 {
+  height: 100%;
+  margin: 20px;
+  text-align: center;
+}
+
+.container-polos {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 450px;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.card-polos {
+  background-color: #45B26F;
+  height: 450px;
+  width: 450px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  margin: 20px;
+}
+
+.titulo-card-polos {
+  display: flex;
+  align-items: center;
+  height: 180px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.polos-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.texto-polos {
+  display: flex;
+  max-width: 80%;
+  text-align: justify;
+  font-size: 20px;
+}
+
+#professores {
+  background-color: #002841;
+  padding: 2%;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.line-green {
+  padding: 1px 30px;
+  background-color: #98ffa8;
+  margin-top: 15px;
+  width: 95%;
+}
+
+.cont-professores {
+  height: 100%;
+}
+
+.w {
+  color: white;
+}
+
+.item {
+  width: 500px;
+  margin: 10px;
+}
+
+.titulo-green {
+  color: #98ffa8;
+}
+
+.cont-professores {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.prof-content img {
+  margin-left: 10%;
+  width: 500px;
+  height: 300px;
+}
+
+.prof-content {
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.btn-p-main {
+  display: flex;
+  width: 200px;
+  height: 30px;
+  margin: 10px 0;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  color: white;
+  text-decoration: dashed;
+  border-radius: 20px 20px 0 20px;
+}
+
+/* Parte do quem somos */
+#quem-somos {
+  background-color: #f4f4f4;
+  margin-top: 30px;
+  padding: 2%;
+}
+
+.quem-somos-content {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0px;
+}
+
+.qs {
+  max-width: 750px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0px 30px;
+}
+
+.qs p {
+  margin: 10px 0;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.blue {
+  color: #002841;
+}
+
+.listTitle {
+  font-size: 30px;
+  margin: 20px 0px;
+}
+
+.group-list {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+}
+
+.group-list .logo-dem,
+.group-list .logo-prefeitura {
+  height: 150px;
+  margin: 0px 40px;
+}
+
+.group-list .logo-prefeitura {
+  min-width: 160px;
+}
+
+.group-list .logo-dem {
+  min-width: 360px;
+}
+
+.foto-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+  min-width: 200px;
+  max-height: 300px;
+  max-width: 200px;
+  justify-content: flex-end;
+  background-size: cover;
+  transition: 0.5s;
+  border: #3C8F5D 2px solid;
+  border-radius: 10%;
+  margin: 0px 40px;
+  background-position: center;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  display: none;
+  overflow-y: hidden;
+}
+
+.foto-card:hover>.card-content p {
+  display: block;
+}
+
+.card-content {
+  visibility: hidden;
+  height: 0;
+  overflow-y: hidden;
+  transition: 0.5s;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+  color: #000;
+  text-align: center;
+}
+
+.foto-card:hover {
+  cursor: pointer;
+}
+
+.foto-card:hover>.card-content {
+  visibility: visible;
+  display: flex;
+  height: 160px;
+  padding: 10px;
+}
+
+#priscila-eleuterio {
+  background-image: url('../images/priscila.jpeg');
+}
+
+#demerson {
+  background-image: url('../images/sem-foto-homem.jpg');
+}
+
+#felipe {
+  background-image: url('../images/felipe.jpg');
+}
+
+#ryan {
+  background-image: url('../images/sem-foto-homem.jpg');
+}
+
+#sophia {
+  background-image: url('../images/sophia.jpeg');
+}
+
+#thomas {
+  background-image: url('../images/thomas.jpg');
+}
+
+#dalva {
+  background-image: url('../images/dalva-verardo.jpeg');
+}
+
+#felipe-luiz {
+  background-image: url('../images/felipe-luiz.jpeg');
+}
+
+#alexandre {
+  background-image: url('../images/alexandre.jpeg');
+}
+
+.nome-card p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3C8F5D;
+  color: #f3f3f3;
+  height: 50px;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.item p,
+.image-logo,
+.apoiadores,
+.sobrenos,
+.funcionarios {
+  margin: 30px;
+}
+
+.professor {
+  background-image: url(../images/sem-foto-homem.jpg);
+}
+
+footer {
+  background-color: #3C8F5D;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.img-footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.img-footer img {
+  height: 50px;
+  margin: 10px;
+}
+
+.contato {
+  border-left: 2px solid #fff;
+  border-radius: 5px;
+  padding-left: 5px;
+  margin-left: 5px;
+  margin-right: 15px;
+}
+
+.contato img {
+  height: 50px;
+}
+
+.contato a {
+  text-decoration: dashed;
+}
+
+.link-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.item-footer {
+  justify-content: center;
+}
+
+.item-footer a {
+  color: white;
+}
+
+.envolvidos {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.envolvidos a {
+  text-decoration: dashed;
+  color: #fff;
+}
+
+/* reponsividade do footer */
+@media (max-width: 700px) {
+  .envolvidos {
     margin: 20px;
-    text-align: left;
-}
-.links{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
+    border-top: 2px solid white;
+    padding: 20px;
+  }
+
+  .contato {
+    border-left: none;
+    border-top: 3px solid white;
+    margin-top: 20px;
+  }
+
+  .link-footer {
+    border-top: 3px solid white;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+
+  .link-footer .item-footer {
+    text-align: center;
+  }
 }
-.list-links{ /* CORRIGIR MARGENS */
-    list-style: none;
+
+.envolvidos .symetra {
+  color: white;
+  background-color: purple;
+  border-radius: 10px;
 }
-.nosso{
-    padding: 10px;
+
+.menuAbrir {
+  display: flex;
+  flex-direction: row;
 }
-.line{
-    padding: 1px 30px;
-    background-color: #002841;
-    margin-top: 15px;
-    width: 95%;
+
+.menuAbrir i {
+  display: none;
 }
-h2{
-    color: #002841;
+
+.sidebarAbrir {
+  cursor: pointer;
+  font-size: 25px;
+  padding: 5px;
 }
-.flex-l, .flex-r{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+
+.sidebarFechar {
+  font-size: 24px;
 }
-.flex-l p{
-    width: 60%;
+
+.toggle {
+  display: none;
 }
-.flex-r{
+
+
+/* 
+
+
+TELA DE CADASTRO
+
+
+*/
+
+.header-cadastro {
+  margin: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  height: 70px;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 0px 30px #000;
+  position: fixed;
+}
+
+.header-cadastro .left-upper {
+  margin: 0px 20px;
+}
+
+.header-cadastro .right-upper .logo-dem,
+.header-cadastro .right-upper .logo-prefeitura {
+  margin: 0;
+}
+
+.header-cadastro .right-upper {
+  margin-right: 30px;
+}
+
+.main-cadastro {
+  margin-top: 0;
+  min-height: 100vh;
+  background-image: url('../images/sala-de-aula.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+
+.form-cadastro {
+  margin-top: 10%;
+  background-color: white;
+  max-width: 700px;
+  min-width: 70%;
+  min-height: 300px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #002841;
+  border-radius: 30px;
+  box-shadow: #000 3px 3px 30px;
+}
+
+.form-cadastro h2 {
+  width: 100%;
+  height: 120px;
+  justify-content: center;
+  color: #002841;
+}
+
+.form-cadastro .group-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-cadastro label {
+  margin: 10px;
+}
+
+.form-cadastro .input-cadastro,
+.form-cadastro select {
+  width: 280px;
+  height: 35px;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 18px;
+  border: 0.5px solid #002841;
+}
+
+.form-cadastro .button-submit {
+  display: flex;
+  height: 50px;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  border: 2px solid #002841;
+  border-radius: 10px;
+  background-color: #afbec7;
+  color: #002841;
+  font-size: 15px;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.form-cadastro .button-submit:hover {
+  background-color: #002841;
+  color: #f4f4f4;
+}
+
+.group-professores {
+  display: none;
+  flex-direction: column;
+}
+
+.group-alunos {
+  display: none;
+  flex-direction: column;
+}
+
+.group-professores div,
+.group-alunos div {
+  margin: 10px 0;
+  display: flex;
+}
+
+.form-cadastro #polos {
+  display: flex;
+  max-width: 20px;
+}
+
+@media(max-width: 1100px) {
+  #bonequinho-container {
+    display: none;
+  }
+
+  #logos img {
+    height: 60px;
+  }
+}
+
+@media(max-width: 700px) {
+  .qs p {
     width: 100%;
+  }
+
+  #chats img {
+    height: 50px;
+  }
+
+  #logos img {
+    height: 50px;
+  }
+
+  .card-polos {
+    width: 260px;
+    height: 260px;
+    font-size: 19px;
+    margin: 10% 0px;
+  }
+
+  .titulo-card-polos {
+    height: 100px;
+  }
+
+  .links {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .item {
+    width: 300px;
+  }
+
+  .item-center {
+    width: 300px;
+  }
+
+  .upper-header {
+    min-height: 30px;
+  }
+
+  .left-upper {
+    width: 187.5px;
+    height: 27.5px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .right-upper {
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+  }
+
+  .logo-dem {
+    width: 65.5px;
+    height: 27.5px;
+  }
+
+  .logo-prefeitura {
+    width: 30px;
+    height: 27.5px;
+  }
+
+  .header-index {
+    margin-top: 30px;
+  }
+
+  .main-index {
+    margin-top: 90px;
+  }
+
+  .quem-somos-content {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0px;
+  }
+
+  .qs {
+    margin: 0;
+  }
+
+  #inicio-content,
+  .links,
+  .nosso-projeto-texto1,
+  .nosso-projeto-texto2,
+  .texto-polos,
+  .card-polos,
+  .prof-content,
+  .qs p {
+    font-size: 15px;
+    display: flex;
+  }
+
+  .listTitle {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  .alunos,
+  .professores {
+    width: 200px;
+  }
 }
-.item{
-    width: 400px;
-    margin: 0 5% 0 5%;
-    margin-bottom: 20px;
-}
-.prof{
-    background-color: #002841;
+
+@media (max-width: 940px) {
+  .header-index{
+    justify-content: flex-start;
+  }
+  .menuAbrir {
+    flex-direction: column;
+    padding-top: 30px;
+  }
+
+  .toggle {
+    left: -0%;
+  }
+
+  nav.ativar .menuAbrir {
+    opacity: 0;
+    transition: all 0.4s ease;
+  }
+
+  .sidebarAbrir {
+    cursor: pointer;
+    font-size: 25px;
     padding: 5px;
+    display: block;
+  }
+
+  .logo-dem {
+    margin-right: 180px;
+    margin-top: 8.5px;
+  }
+
+  .logo-prefeitura {
+    margin-right: 180px;
+    margin-top: 8.5px;
+    display: block;
+
+  }
+
+  #btnMenu {
+    display: flex;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    z-index: 3;
+    top: 0;
+  }
+
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100px;
+    top: 70px;
+    right: 0px;
+    background-color: #9c9c9c;
+    transition: .6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: hidden;
+  }
+
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, .05);
+  }
+
 }
-.line-green{
-    padding: 1px 30px;
-    background-color: #98FFA8;
-    margin-top: 15px;
-    width: 95%;
+
+/*
+
+
+//TELA DE LOGIN
+
+
+*/
+
+.header-login {
+  margin: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  height: 70px;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 0px 30px #000;
+  position: fixed;
 }
-.w{
-    color: white;
+
+.header-login .left-upper {
+  margin: 0px 20px;
+}
+
+.header-login .right-upper .logo-dem,
+.header-login .right-upper .logo-prefeitura {
+  margin: 0;
+}
+
+.header-login .right-upper {
+  margin-right: 30px;
+}
+
+.main-login {
+  margin-top: 0;
+  min-height: 100vh;
+  background-image: url('../images/sala-de-aula.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-login {
+  background-color: white;
+  max-width: 700px;
+  min-width: 70%;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #002841;
+  border-radius: 30px;
+  box-shadow: #000 3px 3px 30px;
+}
+
+.form-login h2 {
+  width: 100%;
+  height: 120px;
+  justify-content: center;
+  color: #002841;
+}
+
+.form-login .group-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-login label {
+  margin: 10px;
+}
+
+.form-login .input-login {
+  width: 280px;
+  height: 20px;
+}
+
+.form-login .button-submit {
+  display: flex;
+  height: 50px;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  border: 2px solid #002841;
+  border-radius: 10px;
+  background-color: #afbec7;
+  color: #002841;
+  font-size: 15px;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.form-login .button-submit:hover {
+  background-color: #002841;
+  color: #f4f4f4;
 }

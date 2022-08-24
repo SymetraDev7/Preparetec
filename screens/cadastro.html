@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CADASTRO - PREPARETEC</title>
+
+    <link rel="stylesheet" type="text/css" href="./../assets/styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+</head>
+
+<body>
+    <header class="header-cadastro">
+        <a href='index.html'>
+            <article class='left-upper'>
+            </article>
+        </a>
+        <article class="right-upper">
+            <a href="https://mongagua.sp.gov.br/educacao">
+                <aside class="logo-dem"></aside>
+            </a>
+            <a href="https://mongagua.sp.gov.br/">
+                <aside class="logo-prefeitura"></aside>
+            </a>
+        </article>
+    </header>
+    <main class="main-cadastro">
+        <form action="feed-principal.html" method="post" class="form-cadastro">
+            <h2>CADASTRO</h2>
+            <div class="group-form">    
+                <label>Selecione o tipo de usuário:</label>
+                <select name="tipo-usuario" id="tipoUsuario">
+                    <option value="administrador">Administrador</option>
+                    <option value="professor">Professor</option>
+                    <option value="aluno">Aluno</option>
+                </select>
+                <label>Insira o nome do usuário: </label>
+                <input class="input-cadastro" type='text' id='nome' required>
+                <label>Insira o e-mail: </label>
+                <input class="input-cadastro" type='text' id='email' required>
+                <label>Insira o telefone (somente números):</label>
+                <input class="input-cadastro" type="text" id='telefone' placeholder="(__) _____-____" data-mask="(00) 00000-0000" maxlength="15" autocomplete="off" required>
+                <div class="group-professores">
+                    <label>CPF do Professor: </label>
+                    <input class="input-cadastro" type="text" id="cpf" placeholder="___.___.___-__" data-mask="000.000.000-00" maxlength="14" autocomplete="off" required>
+                    <label>CEP do Professor: </label>
+                    <input class="input-cadastro" type="text" id="cep" placeholder="_____-___" data-mask="00000-000" maxlength="9" autocomplete="off" required>
+                    <label>Insira o endereço: </label>
+                    <input class="input-cadastro" type='text' id='endereco' required>
+                    <label>Formação do Professor: </label>
+                    <input class="input-cadastro" type="text" id="formacao" required>
+                    <label>Polos que vai dar aula: </label>
+                    <div><input class="input-checkbox" type="checkbox" id="polo1" name="polos" value="Polo 1" required>Polo 1 - Sirana</div>
+                    <div><input class="input-checkbox" type="checkbox" id="polo2" name="polos" value="Polo 2" required>Polo 2 - Jacoub</div>
+                </div>
+                <div class="group-alunos">
+                    <label>CPF do Aluno: </label>
+                    <input class="input-cadastro" type="text" id="cpf" placeholder="___.___.___-__" data-mask="000.000.000-00" maxlength="14" autocomplete="off" required>
+                    <label>Data de Nascimento do Aluno: </label>
+                    <input class="input-cadastro" type="text" id="dtNasc" placeholder="DD/MM/AAAA" data-mask="00/00/0000" maxlength="10" autocomplete="off" required>
+                    <label>CEP do Professor: </label>
+                    <input class="input-cadastro" type="text" id="cep" placeholder="_____-___" data-mask="00000-000" maxlength="9" autocomplete="off" required>
+                    <label>Insira o endereço: </label>
+                    <input class="input-cadastro" type='text' id='endereco' required>
+                    <label>Polo que vai estudar: </label>
+                    <div><input class="input-radio" type="radio" id="polo1" name="polos" value="Polo 1" required>Polo 1 - Sirana</div>
+                    <div><input class="input-radio" type="radio" id="polo2" name="polos" value="Polo 2" required>Polo 2 - Jacoub</div>
+                </div>
+                <input class='button-submit' type="submit" value="Enviar" onclick="">
+            </div>
+        </form>
+    </main>
+    <script src ="../assets/styles/style.js"></script>
+    <script src="../assets/src/index.js"></script>
+</body>
+
+</html>
