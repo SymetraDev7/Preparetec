@@ -104,16 +104,15 @@ body::-webkit-scrollbar-thumb {
   background-color: #f3f3f3;
   border-radius: 0px 0px 20px 20px;
   position: fixed;
-}
-
-.header-index {
   margin-top: 60px;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
 }
 
 header nav ul {
   display: flex;
   width: 100%;
-  height: 60px;
   justify-content: center;
   align-items: center;
   list-style: none;
@@ -123,7 +122,9 @@ li {
   width: 200px;
   text-align: center;
 }
-
+#btnMenu{
+  display: none;
+}
 .btn-p {
   background-color: red;
   display: flex;
@@ -541,13 +542,16 @@ h1 {
 #thomas {
   background-image: url('../images/thomas.jpg');
 }
-#dalva{
+
+#dalva {
   background-image: url('../images/dalva-verardo.jpeg');
 }
-#felipe-luiz{
+
+#felipe-luiz {
   background-image: url('../images/felipe-luiz.jpeg');
 }
-#alexandre{
+
+#alexandre {
   background-image: url('../images/alexandre.jpeg');
 }
 
@@ -635,27 +639,30 @@ footer {
   text-decoration: dashed;
   color: #fff;
 }
+
 /* reponsividade do footer */
 @media (max-width: 700px) {
-  .envolvidos{
+  .envolvidos {
     margin: 20px;
     justify-content: center;
     text-align: center;
     border-top: 2px solid white;
     padding: 20px;
   }
-  .contato{
+
+  .contato {
     border-left: none;
     border-top: 3px solid white;
     margin-top: 20px;
   }
-  .link-footer{
+
+  .link-footer {
     border-top: 3px solid white;
     border-radius: 5px;
     margin-top: 20px;
   }
 
-  .link-footer .item-footer{
+  .link-footer .item-footer {
     text-align: center;
   }
 }
@@ -666,12 +673,12 @@ footer {
   border-radius: 10px;
 }
 
-.menuAbrir{
+.menuAbrir {
   display: flex;
   flex-direction: row;
 }
 
-.menuAbrir i{
+.menuAbrir i {
   display: none;
 }
 
@@ -936,28 +943,30 @@ TELA DE CADASTRO
 }
 
 @media (max-width: 940px) {
-  
- .menuAbrir{
+  .header-index{
+    justify-content: flex-start;
+  }
+  .menuAbrir {
     flex-direction: column;
     padding-top: 30px;
-}
+  }
 
-.toggle{
-  left: -0%;
-}
+  .toggle {
+    left: -0%;
+  }
 
-nav.ativar .menuAbrir {
-  opacity: 0;
-  transition: all 0.4s ease;
-}
+  nav.ativar .menuAbrir {
+    opacity: 0;
+    transition: all 0.4s ease;
+  }
 
-  .sidebarAbrir{
+  .sidebarAbrir {
     cursor: pointer;
     font-size: 25px;
     padding: 5px;
     display: block;
   }
-  
+
   .logo-dem {
     margin-right: 180px;
     margin-top: 8.5px;
@@ -977,12 +986,14 @@ nav.ativar .menuAbrir {
     cursor: pointer;
     background: none;
     border: none;
+    z-index: 3;
+    top: 0;
   }
 
   #menu {
     display: block;
     position: absolute;
-    width: 100%;
+    width: 100px;
     top: 70px;
     right: 0px;
     background-color: #9c9c9c;
@@ -1015,7 +1026,7 @@ nav.ativar .menuAbrir {
 
 */
 
-.header-login{
+.header-login {
   margin: 0;
   background-color: #f4f4f4;
   display: flex;
@@ -1026,16 +1037,21 @@ nav.ativar .menuAbrir {
   box-shadow: 0px 0px 30px #000;
   position: fixed;
 }
-.header-login .left-upper{
+
+.header-login .left-upper {
   margin: 0px 20px;
 }
-.header-login .right-upper .logo-dem, .header-login .right-upper .logo-prefeitura{
+
+.header-login .right-upper .logo-dem,
+.header-login .right-upper .logo-prefeitura {
   margin: 0;
 }
-.header-login .right-upper{
+
+.header-login .right-upper {
   margin-right: 30px;
 }
-.main-login{
+
+.main-login {
   margin-top: 0;
   min-height: 100vh;
   background-image: url('../images/sala-de-aula.jpg');
@@ -1045,7 +1061,8 @@ nav.ativar .menuAbrir {
   justify-content: center;
   align-items: center;
 }
-.form-login{
+
+.form-login {
   background-color: white;
   max-width: 700px;
   min-width: 70%;
@@ -1056,26 +1073,31 @@ nav.ativar .menuAbrir {
   border-radius: 30px;
   box-shadow: #000 3px 3px 30px;
 }
-.form-login h2{
+
+.form-login h2 {
   width: 100%;
   height: 120px;
   justify-content: center;
   color: #002841;
 }
-.form-login .group-form{
+
+.form-login .group-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.form-login label{
+
+.form-login label {
   margin: 10px;
 }
-.form-login .input-login{
+
+.form-login .input-login {
   width: 280px;
   height: 20px;
 }
-.form-login .button-submit{
+
+.form-login .button-submit {
   display: flex;
   height: 50px;
   width: 100px;
@@ -1090,8 +1112,8 @@ nav.ativar .menuAbrir {
   font-weight: 700;
   transition: 0.2s;
 }
-.form-login .button-submit:hover{
+
+.form-login .button-submit:hover {
   background-color: #002841;
   color: #f4f4f4;
 }
-
