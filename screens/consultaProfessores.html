@@ -7,6 +7,8 @@
 
     <title>Consulta Professores</title>
 
+    <link rel="shortcut icon" href="../assets/images/LogoDEM.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../assets/styles/consulta.css" />
     <link rel="stylesheet" type="text/css" href="../assets/styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -55,7 +57,28 @@
     function append(parent, el) {
       return parent.appendChild(el);
     }
+    var tabela = document.querySelector("tbody");
+    var linhas = tabela.querySelectorAll("tr");
 
+    for (var i = 0; i < linhas.length; i++) {
+      var linha = linhas[i];
+      linha.addEventListener("click", function () {
+        //Adicionar ao atual
+        selLinha(this, false); //Selecione apenas um
+        //selLinha(this, true); //Selecione quantos quiser
+      });
+    }
+
+    function selLinha(linha, multiplos) {
+      if (!multiplos) {
+        var linhas = linha.parentElement.getElementsByTagName("tr");
+        for (var i = 0; i < linhas.length; i++) {
+          var linha_ = linhas[i];
+          linha_.classList.remove("active");
+        }
+      }
+      linha.classList.toggle('active');
+    }
     const ul = document.querySelector('.tableBody');
     const url = 'http://localhost:3333/api/admin/professores';
 

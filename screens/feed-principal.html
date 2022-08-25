@@ -1,55 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>TELA PRINCIPAL - Admin</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" type="text/css" href="../assets/styles/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+  <title>TELA PRINCIPAL - Admin</title>
 
-  <body>
-    <header class="header-login">
-      <a href="index.html">
-        <article class="left-upper"></article>
+  <link rel="stylesheet" type="text/css" href="../assets/styles/style.css" />
+  <link rel="stylesheet" type="text/css" href="../assets/styles/telaMenu.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="header-login">
+    <a href="index.html">
+      <article class="left-upper"></article>
+    </a>
+    <article class="right-upper">
+      <a href="https://mongagua.sp.gov.br/educacao">
+        <aside class="logo-dem"></aside>
       </a>
-      <article class="right-upper">
-        <a href="https://mongagua.sp.gov.br/educacao">
-          <aside class="logo-dem"></aside>
-        </a>
-        <a href="https://mongagua.sp.gov.br/">
-          <aside class="logo-prefeitura"></aside>
-        </a>
-      </article>
-    </header>
-    <main class="main-feed">
-      <section>
-        <div><h2>Cadastrar Usuários</h2></div>
-        <div>
-          <p>
-            Clicando aqui, seja redirecionado para a tela de cadastro, onde você
-            pode cadastrar um novo aluno, professor ou administrador.
-          </p>
+      <a href="https://mongagua.sp.gov.br/">
+        <aside class="logo-prefeitura"></aside>
+      </a>
+    </article>
+  </header>
+  <main class="main-feed">
+    <section>
+      <div>
+        <div class="sessao">
+          <h1>Olá, Dalva Verardo!</h1> <!-- depois ligar a api e puxará o nome de quem iniciou a sessão -->
+          <div class="link"><a href="#sair">Encerrar sessão</a></div>
         </div>
-      </section>
-      <section>
-        <div><h2>Consultar Usuários</h2></div>
-        <div>
-          <p>
-            Clicando aqui, você poderá consultar os dados dos alunos,
-            professores e administradores já cadastrados, além de poder editar e
-            excluir seus respectivos dados.
-          </p>
-        </div>
-      </section>
-    </main>
-  </body>
+        
+        <h2>Consultar Usuários</h2>
+      </div>
+      <div>
+        <p>
+          Clicando em qualquer um dos botões de consulta, você poderá consultar os dados dos alunos,
+          professores ou administradores já cadastrados, além de poder editar e
+          excluir seus respectivos dados.
+        </p>
+    </section>
+    <section>
+      <div class="btn-consultas">
+        <a href="cadastro.html">Cadastrar Usuários</a>
+        <a href="consultaAlunos.html">Consultar Aluno</a>
+        <a href="consultaProfessores.html">Consultar Professor</a>
+        <a href="consultaAdmin.html">Consultar Administrador</a>
+      </div>
+      </div>
+    </section>
+
+  </main>
+</body>
+
 </html>
