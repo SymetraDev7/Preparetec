@@ -1052,9 +1052,10 @@ TELA DE CADASTRO
 }
 
 .main-login {
+  background-color: #afbec7;
   margin-top: 0;
   min-height: 100vh;
-  background-image: url('../images/sala-de-aula.jpg');
+  /* background-image: url('../images/sala-de-aula.jpg'); */
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
