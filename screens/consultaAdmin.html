@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Consulta Administradores</title>
+
+    <link rel="stylesheet" type="text/css" href="../assets/styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header-login">
+      <a href="index.html">
+        <article class="left-upper"></article>
+      </a>
+      <article class="right-upper">
+        <a href="https://mongagua.sp.gov.br/educacao">
+          <aside class="logo-dem"></aside>
+        </a>
+        <a href="https://mongagua.sp.gov.br/">
+          <aside class="logo-prefeitura"></aside>
+        </a>
+      </article>
+    </header>
+    <main class="main-login">
+      <div class="box-body no-padding">
+        <table class="table table-striped table-hover">
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Email</th>
+              <th>Telefone</th>
+            </tr>
+          </thead>
+          <tbody class="tableBody">
+ 
+          </tbody>
+        </table>
+      </div>
+    </div>
+    </main>
+    <script>
+    function append(parent, el) {
+      return parent.appendChild(el);
+    }
+
+    const ul = document.querySelector('.tableBody');
+    const url = 'http://localhost:3333/api/admin/admin';
+
+    fetch(url)
+    .then((resp) => resp.json())
+    .then(function(data) {
+      let professores = data.data;
+      console.log(professores);
+      return professores.map(function(aluno) {
+        let row = document.createElement('tr');
+        let nameField = document.createElement('td');
+        let emailField = document.createElement('td');
+        let telField = document.createElement('td');
+        console.log(aluno);
+        nameField.innerHTML = aluno.nmAdmin
+        emailField.innerHTML = aluno.emailAdmin
+        telField.innerHTML = aluno.telAdmin
+        append(row, nameField);
+        append(row, emailField);
+        append(row, telField);
+        append(ul, row);
+      })
+    })
+    .catch(function(error) {
+      console.log(error);
+    });
+    </script>
+  </body>
+</html>
