@@ -38,7 +38,7 @@
       </article>
     </header>
     <main class="main-cadastro">
-      <form action="feed-principal.html" method="post" class="form-cadastro">
+      <form class="form-cadastro">
         <h2>CADASTRO</h2>
         <div class="group-form">
           <label>Selecione o tipo de usuário:</label>
@@ -48,15 +48,28 @@
             <option value="aluno">Aluno</option>
           </select>
           <label>Insira o nome do usuário: </label>
-          <input class="input-cadastro" type="text" id="nome" required />
+          <input
+            class="input-cadastro"
+            type="text"
+            id="nome"
+            value="an"
+            required
+          />
           <label>Insira o e-mail: </label>
-          <input class="input-cadastro" type="text" id="email" required />
+          <input
+            class="input-cadastro"
+            type="text"
+            id="email"
+            value="usuari@usuio.com"
+            required
+          />
           <label>Insira o telefone (somente números):</label>
           <input
             class="input-cadastro"
             type="text"
             id="telefone"
             placeholder="(__) _____-____"
+            value="(13) 99170-4383"
             data-mask="(00) 00000-0000"
             maxlength="15"
             autocomplete="off"
@@ -67,8 +80,10 @@
             <input
               class="input-cadastro"
               type="text"
-              id="cpf"
+              name="cpfProfessor"
+              id="cpfProfessor"
               placeholder="___.___.___-__"
+              value="558.345.478-06"
               data-mask="000.000.000-00"
               maxlength="14"
               autocomplete="off"
@@ -78,7 +93,9 @@
             <input
               class="input-cadastro"
               type="text"
-              id="cep"
+              id="cepProfessor"
+              name="cepProfessor"
+              value="11718-350"
               placeholder="_____-___"
               data-mask="00000-000"
               maxlength="9"
@@ -86,117 +103,260 @@
               required
             />
             <label>Insira o endereço: </label>
-            <input class="input-cadastro" type="text" id="endereco" required />
+            <input
+              class="input-cadastro"
+              type="text"
+              name="enderecoProfessor"
+              value="aaaaaaaaaaa"
+              id="enderecoProfessor"
+              required
+            />
             <label>Formação do Professor: </label>
-            <input class="input-cadastro" type="text" id="formacao" required />
+            <input
+              class="input-cadastro"
+              type="text"
+              name="formacaoProfessor"
+              value="aaaaaaaa"
+              id="formacaoProfessor"
+              required
+            />
+            <label>Disciplina do Professor: </label>
+            <input
+              class="input-cadastro"
+              type="text"
+              value="aaaaaaaaaa"
+              id="disciplinaProfessor"
+              name="disciplinaProfessor"
+              required
+            />
             <label>Polos que vai dar aula: </label>
-            <div>
-              <input
-                class="input-checkbox"
-                type="checkbox"
-                id="polo1"
-                name="polos"
-                value="Polo 1"
-                required
-              />Polo 1 - Sirana
-            </div>
-            <div>
-              <input
-                class="input-checkbox"
-                type="checkbox"
-                id="polo2"
-                name="polos"
-                value="Polo 2"
-                required
-              />Polo 2 - Jacoub
-            </div>
+            <select name="poloProfessor" id="poloProfessor">
+              <option value="Sirana">Sirana</option>
+              <option value="Jacoub">Jacoub</option>
+            </select>
           </div>
           <div class="group-alunos">
             <label>CPF do Aluno: </label>
             <input
               class="input-cadastro"
               type="text"
-              id="cpf"
+              id="cpfAluno"
+              name="cpfAluno"
               placeholder="___.___.___-__"
               data-mask="000.000.000-00"
               maxlength="14"
               autocomplete="off"
-              required
+              value="aaaaaa"
             />
             <label>Data de Nascimento do Aluno: </label>
             <input
               class="input-cadastro"
               type="text"
               id="dtNasc"
+              name="dtNasc"
               placeholder="DD/MM/AAAA"
               data-mask="00/00/0000"
               maxlength="10"
               autocomplete="off"
-              required
+              value="aaaaaa"
             />
-            <label>CEP do Professor: </label>
+            <label>Escola: </label>
             <input
               class="input-cadastro"
               type="text"
-              id="cep"
-              placeholder="_____-___"
-              data-mask="00000-000"
-              maxlength="9"
+              id="escolaAluno"
+              value="aaaaaa"
+              name="escolaAluno"
+              maxlength="100"
               autocomplete="off"
-              required
+            />
+            <label>RA: </label>
+            <input
+              class="input-cadastro"
+              type="text"
+              id="raAluno"
+              name="raAluno"
+              maxlength="10"
+              autocomplete="off"
+              value="aaaaaa"
             />
             <label>Insira o endereço: </label>
-            <input class="input-cadastro" type="text" id="endereco" required />
+            <input
+              class="input-cadastro"
+              type="text"
+              id="enderecoAluno"
+              name="enderecoAluno"
+              value="aaaaaa"
+              name="enderecoAluno"
+            />
             <label>Polo que vai estudar: </label>
-            <div>
-              <input
-                class="input-radio"
-                type="radio"
-                id="polo1"
-                name="polos"
-                value="Polo 1"
-                required
-              />Polo 1 - Sirana
-            </div>
-            <div>
-              <input
-                class="input-radio"
-                type="radio"
-                id="polo2"
-                name="polos"
-                value="Polo 2"
-                required
-              />Polo 2 - Jacoub
-            </div>
+            <select name="poloAluno" id="poloAluno">
+              <option value="Sirana">Sirana</option>
+              <option value="Jacoub">Jacoub</option>
+            </select>
           </div>
           <input
+            id="signup-btn-submit"
             class="button-submit"
             type="submit"
             value="Enviar"
-            onclick=""
           />
         </div>
       </form>
     </main>
-    <script src="../assets/styles/style.js"></script>
-    <script src="../assets/src/index.js"></script>
+    <!-- <script src="../assets/styles/style.js"></script> -->
+    <!-- <script src="../assets/src/index.js"></script> -->
     <script>
       var formProfessores = document.querySelector(".group-professores");
       var formAlunos = document.querySelector(".group-alunos");
       var tipoUsuario = document.querySelector("#tipoUsuario");
 
-      tipoUsuario.addEventListener("change", () => {
+      const form = {
+        nome: document.querySelector("#nome").value,
+        email: document.querySelector("#email").value,
+        telefone: document.querySelector("#telefone").value,
+        cpfProfessor: document.querySelector("#cpfProfessor").value,
+        cepProfessor: document.querySelector("#cepProfessor").value,
+        enderecoProfessor: document.querySelector("#enderecoProfessor").value,
+        formacaoProfessor: document.querySelector("#formacaoProfessor").value,
+        disciplinaProfessor: document.querySelector("#disciplinaProfessor").value,
+        poloProfessor: document.querySelectorAll("#poloProfessor").value,
+        cpfAluno: document.querySelector("#cpfAluno").value,
+        dtNasc: document.querySelector("#dtNasc").value,
+        enderecoAluno: document.querySelector("#enderecoAluno").value,
+        poloAluno: document.querySelectorAll("#poloAluno").value,
+        raAluno: document.querySelectorAll("#raAluno").value,
+        escolaAluno: document.querySelectorAll("#escolaAluno").value,
+        submit: document.querySelector("#signup-btn-submit"),
+      };
+
+      tipoUsuario.addEventListener("change", (e) => {
         if (tipoUsuario.value == "professor") {
           formProfessores.style.display = "flex";
           formAlunos.style.display = "none";
+          let button = form.submit.addEventListener("click", (e) => {
+            let url = "http://localhost:3333/api/admin/professores";
+            e.preventDefault();
+            fetch(url, {
+              method: "POST",
+              headers: {
+                Accept: "application/json, text/plain, */*",
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({
+                nome: form.nome,
+                cpf: form.cpfProfessor,
+                email: form.email,
+                tel: form.telefone,
+                formacao: form.formacaoProfessor,
+                end: form.cepProfessor + " " + form.enderecoProfessor,
+                disc: form.disciplinaProfessor,
+                senha: 12345678
+              }),
+            })
+              .then((response) => response.json())
+              .then((res) => {
+                console.log(res.data);
+                console.log(form)
+              })
+              .catch((error) => {
+                console.log(error);
+              });
+          });
+          function verificar() {}
         } else if (tipoUsuario.value == "aluno") {
           formAlunos.style.display = "flex";
           formProfessores.style.display = "none";
+          let button = form.submit.addEventListener("click", (e) => {
+            let url = "http://localhost:3333/api/admin/alunos";
+            e.preventDefault();
+            fetch(url, {
+              method: "POST",
+              headers: {
+                Accept: "application/json, text/plain, */*",
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({
+                nome: form.nome,
+                cpf: form.cpfAluno,
+                dataNasc: form.dtNasc,
+                email: form.email,
+                escola: form.escolaAluno,
+                ra: form.raAluno,
+                telResp: form.telefone,
+                end: form.enderecoAluno,
+                polo: form.poloAluno,
+                senha: 12345678
+              }),
+            })
+              .then((response) => response.json())
+              .then((res) => {
+                console.log(res.data);
+                console.log(form)
+              })
+              .catch((error) => {
+                console.log(error);
+              });
+          });
         } else {
           formProfessores.style.display = "none";
           formAlunos.style.display = "none";
         }
       });
+
+      // switch (tipoUsuario.value) {
+      //   case "professor":
+
+      //     break;
+      //   case "aluno":
+      //     break;
+      //   case "administrador":
+      //     break;
+      //   default:
+      //     alert(
+      //       "Ocorreu Um Erro Para Se Conectar Ao Servidor, Tente Recarregar A Página, Se O Erro Persistir Entre Em Contato Com O Suporte Técnico Através Do Endereço De Email: SymetraStack@gmail.com"
+      //     );
+      // }
+
+      // let button = form.submit.addEventListener("click", (e) => {
+      //   e.preventDefault();
+
+      //   fetch(url, {
+      //     method: "POST",
+      //     headers: {
+      //       Accept: "application/json, text/plain, */*",
+      //       "Content-Type": "application/json",
+      //     },
+      //     body: JSON.stringify({
+      //       login: form.email.value,
+      //       senha: form.password.value,
+      //     }),
+      //   })
+      //     .then((response) => response.json())
+      //     .then((login) => {
+      //       switch (login.code) {
+      //         case 200:
+      //           window.location.href = "http://localhost:5500/screens/";
+      //           break;
+      //         case 404:
+      //           alert("Usuario  Não Encontrado");
+      //           loader.style.display = "none";
+      //           textDefault.style.display = "block";
+      //           break;
+      //         case 403:
+      //           alert("Senha Incorreta");
+      //           loader.style.display = "none";
+      //           textDefault.style.display = "block";
+      //       }
+      //     })
+      //     .catch((err) => {
+      //       alert(
+      //         "Ocorreu Um Erro Para Se Conectar Ao Servidor, Tente Recarregar A Página, Se O Erro Persistir Entre Em Contato Com O Suporte Técnico Através Do Endereço De Email: SymetraStack@gmail.com"
+      //       );
+      //       loader.style.display = "none";
+      //       textDefault.style.display = "block";
+      //     });
+      // });
     </script>
   </body>
 </html>
