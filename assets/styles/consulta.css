@@ -1,3 +1,6 @@
+*{
+    overflow: auto  ;
+}
 .main-consulta{
     display: flex;
     justify-content: center;
@@ -5,6 +8,7 @@
     min-height: 100vh;
     background-image: url('../images/sala-de-aula.jpg');
     background-size: cover;
+    overflow: auto;
 }
 .table {
     margin: 120px 0;
@@ -47,10 +51,10 @@ td {
 }
 tr{
     min-width: 90vw;
+    overflow-x: auto;
 }
 td {
     background-color: #f5f5f5;
-    overflow-x: auto;
 }
 .active  td{
     background-color: #98FFA8;

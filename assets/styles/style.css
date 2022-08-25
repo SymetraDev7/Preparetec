@@ -542,6 +542,7 @@ h1 {
 
 #thomas {
   background-image: url("../images/thomas.jpg");
+  background-position: 0;
 }
 
 #dalva {

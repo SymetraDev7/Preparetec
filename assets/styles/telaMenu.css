@@ -8,13 +8,14 @@
     flex-wrap: wrap;
 }
 .main-feed h2{
-    width: 100vw;
-    border-bottom: 2px solid white;
+    width: 95vw;
+    border-bottom: 2px solid #21683d;
     margin: 25px;
 }
 p{
     color: white;
     margin: 25px;
+    width: 600px;
 }
 .sessao{
     display: flex;
@@ -29,6 +30,7 @@ p{
     color: white;
     border-bottom: 2px solid white;
     border-radius: 20px;
+    margin: 25px
 }
 
 .sessao a{
@@ -40,6 +42,7 @@ p{
 .btn-consultas{
     display: flex;
     margin: 20px;
+    flex-wrap: wrap;
 }
 .btn-consultas a{
     display: flex;
